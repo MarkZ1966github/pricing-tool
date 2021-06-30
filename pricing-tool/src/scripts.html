@@ -1,0 +1,3264 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ 
+  <script>
+// Commit on 2/24/2021 by mzschiegner  
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems);
+  });
+
+function showPrice() {
+      var v = document.getElementById("showPrice");
+      if (v.style.display === "none") {
+         v.style.display = "block";
+      } else {
+       v.style.display = "none";
+      }
+   } 
+
+// START ERP
+
+function myFunction() {
+            //this is what you're looking for
+            var x = document.getElementById("erpsection");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+             var btn = document.getElementById("nextbutton");
+             if (btn.style.display === "none") {
+              btn.style.display = "block";
+              } else {
+              btn.style.display = "none";
+        }  
+             var bt = document.getElementById("getstarted");
+             if (bt.style.display === "block") {
+              bt.style.display = "none";
+              } else {
+              bt.style.display = "none";
+        } 
+            var y = document.getElementById("blurb");
+            if (y.style.display === "block") {
+                y.style.display = "none";
+            } else {
+                y.style.display = "none";
+            }
+ }
+
+//END ERP
+
+//START MODIFIER HIDING
+
+function hideModifiers() {
+      var v = document.getElementById("modifiers");
+      if (v.style.display === "block") {
+         v.style.display = "none";
+      } else {
+       v.style.display = "none";
+      }
+          var x = document.getElementById("blurb");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+           var btn = document.getElementById("lockin");
+             if (btn.style.display === "block") {
+              btn.style.display = "none";
+              } else {
+              btn.style.display = "none";
+        } 
+             var bt = document.getElementById("getstarted");
+             if (bt.style.display === "none") {
+              bt.style.display = "block";
+              } else {
+              bt.style.display = "none";
+        }       
+   }
+
+//END MODIFER HIDING
+
+//START DATA WAREHOUSE
+
+function showWH() {
+      var v = document.getElementById("erpsection");
+      if (v.style.display === "block") {
+         v.style.display = "none";
+      } else {
+       v.style.display = "none";
+      }
+          var x = document.getElementById("whsection");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }   
+             var btn = document.getElementById("nextbutton");
+             if (btn.style.display === "block") {
+              btn.style.display = "none";
+              } else {
+              btn.style.display = "none";
+        }  
+             var bt = document.getElementById("nextbutton2");
+             if (bt.style.display === "none") {
+              bt.style.display = "block";
+              } else {
+              btn.style.display = "none";
+        }     
+   }
+
+//END DATA WAREHOUSING
+
+//START CLOUD
+
+function showCloud() {
+      var v = document.getElementById("whsection");
+      if (v.style.display === "block") {
+         v.style.display = "none";
+      } else {
+       v.style.display = "none";
+      }
+          var x = document.getElementById("cloudsection");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }   
+             var btn = document.getElementById("nextbutton2");
+             if (btn.style.display === "block") {
+              btn.style.display = "none";
+              } else {
+              btn.style.display = "none";
+        }  
+             var bt = document.getElementById("nextbutton3");
+             if (bt.style.display === "none") {
+              bt.style.display = "block";
+              } else {
+              btn.style.display = "none";
+        }     
+   }
+
+//END CLOUD
+
+//START CRM 
+
+function showCrm() {
+      var v = document.getElementById("cloudsection");
+      if (v.style.display === "block") {
+         v.style.display = "none";
+      } else {
+       v.style.display = "none";
+      }
+          var x = document.getElementById("crmsection");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }   
+             var btn = document.getElementById("nextbutton3");
+             if (btn.style.display === "block") {
+              btn.style.display = "none";
+              } else {
+              btn.style.display = "none";
+        }  
+             var bt = document.getElementById("nextbutton4");
+             if (bt.style.display === "none") {
+              bt.style.display = "block";
+              } else {
+              btn.style.display = "none";
+        }     
+   }
+
+//END CRM
+
+//START FINANCE
+
+function showFin() {
+      var v = document.getElementById("crmsection");
+      if (v.style.display === "block") {
+         v.style.display = "none";
+      } else {
+       v.style.display = "none";
+      }
+          var x = document.getElementById("finsection");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }   
+             var btn = document.getElementById("nextbutton4");
+             if (btn.style.display === "block") {
+              btn.style.display = "none";
+              } else {
+              btn.style.display = "none";
+        }  
+             var bt = document.getElementById("nextbutton5");
+             if (bt.style.display === "none") {
+              bt.style.display = "block";
+              } else {
+              btn.style.display = "none";
+        }     
+   }
+
+// END FINANCE
+
+// START MARKETING
+
+function showMkt() {
+      var v = document.getElementById("finsection");
+      if (v.style.display === "block") {
+         v.style.display = "none";
+      } else {
+       v.style.display = "none";
+      }
+          var x = document.getElementById("mktsection");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }   
+             var btn = document.getElementById("nextbutton5");
+             if (btn.style.display === "block") {
+              btn.style.display = "none";
+              } else {
+              btn.style.display = "none";
+        }  
+             var bt = document.getElementById("nextbutton6");
+             if (bt.style.display === "none") {
+              bt.style.display = "block";
+              } else {
+              btn.style.display = "none";
+        }     
+   }
+
+//END MARKETING
+
+//START DIGITAL OPS
+
+function showDigOps() {
+      var v = document.getElementById("mktsection");
+      if (v.style.display === "block") {
+         v.style.display = "none";
+      } else {
+       v.style.display = "none";
+      }
+          var x = document.getElementById("digopssection");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }   
+             var btn = document.getElementById("nextbutton6");
+             if (btn.style.display === "block") {
+              btn.style.display = "none";
+              } else {
+              btn.style.display = "none";
+        }  
+             var bt = document.getElementById("loopingbutton");
+             if (bt.style.display === "none") {
+              bt.style.display = "block";
+              } else {
+              btn.style.display = "none";
+        }     
+   }
+
+function showMoreDigops() {
+      var v = document.getElementById("digopssection");
+      if (v.style.display === "block") {
+         v.style.display = "none";
+      } else {
+       v.style.display = "none";
+      }
+          var x = document.getElementById("moredigops");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }   
+             var btn = document.getElementById("nextbutton6");
+             if (btn.style.display === "block") {
+              btn.style.display = "none";
+              } else {
+              btn.style.display = "none";
+        }
+             var bt = document.getElementById("loopingbutton");
+             if (bt.style.display === "none") {
+              bt.style.display = "block";
+              } else {
+              bt.style.display = "none";
+        }     
+   }
+
+function showLooper() {
+      var v = document.getElementById("moredigops");
+      if (v.style.display === "block") {
+         v.style.display = "none";
+      } else {
+       v.style.display = "none";
+      }
+          var x = document.getElementById("looper");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }     
+             var btn = document.getElementById("loopingbutton2");
+             if (btn.style.display === "none") {
+              btn.style.display = "block";
+              } else {
+              btn.style.display = "none";
+        }   
+   }
+
+function showMoreDigops2() {
+      var v = document.getElementById("looper");
+      if (v.style.display === "block") {
+         v.style.display = "none";
+      } else {
+       v.style.display = "none";
+      }
+            var x = document.getElementById("moredigops2");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }   
+             var btn = document.getElementById("loopingbutton2");
+             if (btn.style.display === "block") {
+              btn.style.display = "none";
+              } else {
+              btn.style.display = "none";
+        }    
+   }
+
+function showLooper2() {
+      var v = document.getElementById("looper");
+      if (v.style.display === "block") {
+         v.style.display = "none";
+      } else {
+       v.style.display = "none";
+      }
+          var x = document.getElementById("looper2");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            } 
+            var z = document.getElementById("moredigops2");
+            if (z.style.display === "block") {
+                z.style.display = "none";
+            } else {
+                x.style.display = "none";
+            }      
+             var btn = document.getElementById("loopingbutton3");
+             if (btn.style.display === "none") {
+              btn.style.display = "block";
+              } else {
+              btn.style.display = "none";
+        }   
+   }
+
+function showMoreDigops3() {
+      var v = document.getElementById("looper2");
+      if (v.style.display === "block") {
+         v.style.display = "none";
+      } else {
+       v.style.display = "none";
+      }  
+            var x = document.getElementById("moredigops3");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }  
+             var btn = document.getElementById("loopingbutton3");
+             if (btn.style.display === "block") {
+              btn.style.display = "none";
+              } else {
+              btn.style.display = "none";
+        }   
+   } 
+
+function showLooper3() {
+      var v = document.getElementById("looper2");
+      if (v.style.display === "block") {
+         v.style.display = "none";
+      } else {
+       v.style.display = "none";
+      }
+          var x = document.getElementById("looper3");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            } 
+            var x = document.getElementById("moredigops3");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "none";
+            }     
+             var btn = document.getElementById("nextbutton13");
+             if (btn.style.display === "none") {
+              btn.style.display = "block";
+              } else {
+              btn.style.display = "none";
+        }   
+   } 
+
+//END DIGITAL OPS
+
+//START DIGITAL ADS
+
+function showDigAds() {
+      var v = document.getElementById("moredigops");
+      if (v.style.display === "block") {
+         v.style.display = "none";
+      } else {
+       v.style.display = "none";
+      }
+      var vwww = document.getElementById("moredigops2");
+      if (vwww.style.display === "block") {
+         vwww.style.display = "none";
+      } else {
+       vwww.style.display = "none";
+      }
+      var veee = document.getElementById("moredigops3");
+      if (veee.style.display === "block") {
+         veee.style.display = "none";
+      } else {
+       veee.style.display = "none";
+      }
+      var y = document.getElementById("looper");
+      if (y.style.display === "block") {
+         y.style.display = "none";
+      } else {
+       y.style.display = "none";
+      }
+      var z = document.getElementById("looper2");
+      if (z.style.display === "block") {
+         z.style.display = "none";
+      } else {
+       z.style.display = "none";
+      }
+      var x = document.getElementById("looper3");
+      if (x.style.display === "block") {
+         x.style.display = "none";
+      } else {
+       x.style.display = "none";
+      }
+              var b = document.getElementById("nextbutton13");
+             if (b.style.display === "block") {
+              b.style.display = "none";
+              } else {
+              b.style.display = "none";
+        }
+          var x = document.getElementById("digadssection");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }  
+             var btn = document.getElementById("loop1");
+             if (btn.style.display === "none") {
+              btn.style.display = "block";
+              } else {
+              btn.style.display = "none";
+        } 
+   }
+
+function showMoreDigAds() {
+      var v = document.getElementById("digadssection");
+      if (v.style.display === "block") {
+         v.style.display = "none";
+      } else {
+       v.style.display = "none";
+      }
+          var x = document.getElementById("moredigads");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }   
+             var btn = document.getElementById("loop1");
+             if (btn.style.display === "block") {
+              btn.style.display = "none";
+              } else {
+              btn.style.display = "none";
+        }    
+   }
+
+function showAdsLooper() {
+      var v = document.getElementById("moredigads");
+      if (v.style.display === "block") {
+         v.style.display = "none";
+      } else {
+       v.style.display = "none";
+      }
+          var x = document.getElementById("digadssection2");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }     
+             var btn = document.getElementById("loop2");
+             if (btn.style.display === "none") {
+              btn.style.display = "block";
+              } else {
+              btn.style.display = "none";
+        }   
+   }
+
+function showMoreDigAds2() {
+      var v = document.getElementById("digadssection2");
+      if (v.style.display === "block") {
+         v.style.display = "none";
+      } else {
+       v.style.display = "none";
+      }
+            var x = document.getElementById("digadssection3");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }   
+             var btn = document.getElementById("loop3");
+             if (btn.style.display === "none") {
+              btn.style.display = "block";
+              } else {
+              btn.style.display = "none";
+        }  
+             var btn = document.getElementById("loop2");
+             if (btn.style.display === "block") {
+              btn.style.display = "none";
+              } else {
+              btn.style.display = "none";
+        }    
+   }
+
+function showAdsLooper2() {
+      var v = document.getElementById("moredigads2");
+      if (v.style.display === "block") {
+         v.style.display = "none";
+      } else {
+       v.style.display = "none";
+      }
+          var x = document.getElementById("digadssection3");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            } 
+            var bt = document.getElementById("loop3");
+             if (bt.style.display === "block") {
+              bt.style.display = "none";
+              } else {
+              bt.style.display = "none";
+        }     
+   }
+
+function showMoreDigAds3() {
+      var v = document.getElementById("digadssection3");
+      if (v.style.display === "block") {
+         v.style.display = "none";
+      } else {
+       v.style.display = "none";
+      }  
+            var x = document.getElementById("moredigads3");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }  
+             var btn = document.getElementById("loop3");
+             if (btn.style.display === "block") {
+              btn.style.display = "none";
+              } else {
+              btn.style.display = "none";
+        }   
+   } 
+
+function showAdsLooper3() {
+      var v = document.getElementById("moredigads3");
+      if (v.style.display === "block") {
+         v.style.display = "none";
+      } else {
+       v.style.display = "none";
+      }
+          var x = document.getElementById("digadssection4");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }    
+             var btn = document.getElementById("nextsoc");
+             if (btn.style.display === "none") {
+              btn.style.display = "block";
+              } else {
+              btn.style.display = "none";
+        }   
+   } 
+
+//END DIGITAL ADS
+
+//START SOCIAL
+
+function showSocial() {
+        var v = document.getElementById("moredigads3");
+      if (v.style.display === "block") {
+         v.style.display = "none";
+      } else {
+       v.style.display = "none";
+      }
+      var z = document.getElementById("moredigads");
+      if (z.style.display === "block") {
+         z.style.display = "none";
+      } else {
+       z.style.display = "none";
+      }
+      var zz= document.getElementById("moredigads2");
+      if (zz.style.display === "block") {
+         zz.style.display = "none";
+      } else {
+       zz.style.display = "none";
+      }
+          var x = document.getElementById("socialsection");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }  
+            var x = document.getElementById("digadssection4");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "none";
+            } 
+             var btn = document.getElementById("nextsoc");
+             if (btn.style.display === "block") {
+              btn.style.display = "none";
+              } else {
+              btn.style.display = "none";
+        } 
+         var bt = document.getElementById("lp1");
+             if (bt.style.display === "none") {
+              bt.style.display = "block";
+              } else {
+              bt.style.display = "none";
+        }     
+   }
+
+function showMoreSocial() {
+      var v = document.getElementById("socialsection");
+      if (v.style.display === "block") {
+         v.style.display = "none";
+      } else {
+       v.style.display = "none";
+      }
+          var x = document.getElementById("moresocial");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }   
+             var btn = document.getElementById("lp1");
+             if (btn.style.display === "block") {
+              btn.style.display = "none";
+              } else {
+              btn.style.display = "none";
+        }    
+   }
+function showSocialLooper() {
+      var v = document.getElementById("moresocial");
+      if (v.style.display === "block") {
+         v.style.display = "none";
+      } else {
+       v.style.display = "none";
+      }
+          var x = document.getElementById("socialsection2");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }     
+             var btn = document.getElementById("lp2");
+             if (btn.style.display === "none") {
+              btn.style.display = "block";
+              } else {
+              btn.style.display = "none";
+        }   
+   }
+function showMoreSocial2() {
+      var v = document.getElementById("moresocial2");
+      if (v.style.display === "none") {
+         v.style.display = "block";
+      } else {
+       v.style.display = "none";
+      }
+          var x = document.getElementById("socialsection2");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "none";
+            }        
+             var btn = document.getElementById("lp2");
+             if (btn.style.display === "block") {
+              btn.style.display = "none";
+              } else {
+              btn.style.display = "none";
+        }    
+   }
+function showSocialLooper2() {
+      var v = document.getElementById("moresocial2");
+      if (v.style.display === "block") {
+         v.style.display = "none";
+      } else {
+       v.style.display = "none";
+      }
+          var x = document.getElementById("socialsection3");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }      
+             var btn = document.getElementById("lp3");
+             if (btn.style.display === "none") {
+              btn.style.display = "block";
+              } else {
+              btn.style.display = "none";
+        }   
+   }
+function showMoreSocial3() {
+          var x = document.getElementById("moresocial3");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }   
+
+            var x = document.getElementById("socialsection3");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "none";
+            }
+             var btn = document.getElementById("lp3");
+             if (btn.style.display === "block") {
+              btn.style.display = "none";
+              } else {
+              btn.style.display = "none";
+        }    
+   }   
+function showSocialLooper3() {
+          var x = document.getElementById("socialsection4");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }  
+            var y = document.getElementById("moresocial3");
+            if (y.style.display === "block") {
+                y.style.display = "none";
+            } else {
+                y.style.display = "none";
+            }    
+             var btn = document.getElementById("nextcustsvc");
+             if (btn.style.display === "none") {
+              btn.style.display = "block";
+              } else {
+              btn.style.display = "none";
+        }   
+   }          
+//END SOCIAL 
+
+//START CUST SVC
+
+function showCustSvc() {
+            var x = document.getElementById("custsvcsection");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }  
+          var x = document.getElementById("cp1");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }  
+            var x = document.getElementById("socialsection3");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "none";
+            } 
+            var x = document.getElementById("socialsection2");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "none";
+            } 
+            var x = document.getElementById("socialsection");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "none";
+            } 
+            var x = document.getElementById("socialsection4");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "none";
+            } 
+            var x = document.getElementById("moresocial3");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "none";
+            } 
+            var x = document.getElementById("moresocial2");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "none";
+            } 
+            var x = document.getElementById("moresocial");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "none";
+            } 
+         var bt = document.getElementById("nextcustsvc");
+             if (bt.style.display === "block") {
+              bt.style.display = "none";
+              } else {
+              bt.style.display = "none";
+        }     
+   }
+function showMoreCustSvc() {
+      var v = document.getElementById("custsvcsection");
+      if (v.style.display === "block") {
+         v.style.display = "none";
+      } else {
+       v.style.display = "none";
+      }
+          var x = document.getElementById("morecustsvc");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }   
+             var btn = document.getElementById("cp1");
+             if (btn.style.display === "block") {
+              btn.style.display = "none";
+              } else {
+              btn.style.display = "none";
+        }    
+   }
+function showCustSvcLooper() {
+      var vggg = document.getElementById("morecustsvc");
+      if (vggg.style.display === "block") {
+         vggg.style.display = "none";
+      } else {
+       vggg.style.display = "none";
+      }
+          var xggg = document.getElementById("custsvcsection2");
+            if (xggg.style.display === "none") {
+                xggg.style.display = "block";
+            } else {
+                xggg.style.display = "none";
+            }   
+             var btnggg = document.getElementById("dp1");
+             if (btnggg.style.display === "none") {
+              btnggg.style.display = "block";
+              } else {
+              btnggg.style.display = "none";
+        }    
+   }
+function showMoreCustSvc2() {
+      var vccc = document.getElementById("morecustsvc2");
+      if (vccc.style.display === "none") {
+         vccc.style.display = "block";
+      } else {
+       vccc.style.display = "none";
+      }
+          var xccc = document.getElementById("custsvcsection2");
+            if (xccc.style.display === "block") {
+                xccc.style.display = "none";
+            } else {
+                xccc.style.display = "none";
+            }        
+             var btnccc = document.getElementById("dp1");
+             if (btnccc.style.display === "block") {
+              btnccc.style.display = "none";
+              } else {
+              btnccc.style.display = "none";
+        }    
+   }
+function showCustSvcLooper2() {
+      var vfff = document.getElementById("morecustsvc2");
+      if (vfff.style.display === "block") {
+         vfff.style.display = "none";
+      } else {
+       vfff.style.display = "none";
+      }
+          var xfff = document.getElementById("custsvcsection3");
+            if (xfff.style.display === "none") {
+                xfff.style.display = "block";
+            } else {
+                xfff.style.display = "none";
+            }      
+             var btnfff = document.getElementById("callt");
+             if (btnfff.style.display === "none") {
+              btnfff.style.display = "block";
+              } else {
+              btnfff.style.display = "none";
+        }   
+   }
+         
+//END CUST SVC
+
+//START CALL TRACKING
+
+function showCallTrack() {
+      var v = document.getElementById("projectmanagement3");
+      if (v.style.display === "block") {
+         v.style.display = "none";
+      } else {
+       v.style.display = "none";
+      }
+      var x = document.getElementById("projectmanagement2");
+      if (x.style.display === "block") {
+         x.style.display = "none";
+      } else {
+       x.style.display = "none";
+      }
+      var z = document.getElementById("projectmanagement");
+      if (z.style.display === "block") {
+         z.style.display = "none";
+      } else {
+       z.style.display = "none";
+      }
+      var z = document.getElementById("custsvcsection3");
+      if (z.style.display === "block") {
+         z.style.display = "none";
+      } else {
+       z.style.display = "none";
+      }
+      var w = document.getElementById("morecustsvc");
+      if (w.style.display === "block") {
+         w.style.display = "none";
+      } else {
+       w.style.display = "none";
+      }
+      var w = document.getElementById("morecustsvc2");
+      if (w.style.display === "block") {
+         w.style.display = "none";
+      } else {
+       w.style.display = "none";
+      }
+          var x = document.getElementById("calltrack");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }   
+             var btn = document.getElementById("callt");
+             if (btn.style.display === "block") {
+              btn.style.display = "none";
+              } else {
+              btn.style.display = "none";
+        }  
+             var bt = document.getElementById("thisisabutton");
+             if (bt.style.display === "none") {
+              bt.style.display = "block";
+              } else {
+              btn.style.display = "none";
+        }     
+   }
+
+//END CALL TRACKING
+
+//START PROJECT MANAGEMENT
+
+function showPm() {
+            var x = document.getElementById("projectmanagement");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }   
+            var v = document.getElementById("calltrack");
+            if (v.style.display === "block") {
+                v.style.display = "none";
+            } else {
+                v.style.display = "none";
+            }  
+          var p = document.getElementById("callt");
+            if (p.style.display === "block") {
+                p.style.display = "none";
+            } else {
+                p.style.display = "none";
+            }   
+            var r = document.getElementById("anotherbutton");
+            if (r.style.display === "none") {
+                r.style.display = "block";
+            } else {
+                r.style.display = "none";
+            }  
+             var btr = document.getElementById("thisisabutton");
+             if (btr.style.display === "block") {
+              btr.style.display = "none";
+              } else {
+              btr.style.display = "none";
+        }   
+   }
+function showMorePm() {
+      var v = document.getElementById("projectmanagement");
+      if (v.style.display === "block") {
+         v.style.display = "none";
+      } else {
+       v.style.display = "none";
+      }
+          var x = document.getElementById("moreprojectmanagement");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }   
+             var btn = document.getElementById("anotherbutton");
+             if (btn.style.display === "block") {
+              btn.style.display = "none";
+              } else {
+              btn.style.display = "none";
+        }    
+   }
+function showPmLooper() {
+      var v = document.getElementById("moreprojectmanagement");
+      if (v.style.display === "block") {
+         v.style.display = "none";
+      } else {
+       v.style.display = "none";
+      }
+          var x = document.getElementById("projectmanagement2");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }   
+             var btnnn = document.getElementById("justmorebuttons");
+             if (btnnn.style.display === "none") {
+              btnnn.style.display = "block";
+              } else {
+              btnnn.style.display = "none";
+        }      
+   }
+function showMorePm2() {
+      var v = document.getElementById("moreprojectmanagement2");
+      if (v.style.display === "none") {
+         v.style.display = "block";
+      } else {
+       v.style.display = "none";
+      }
+          var xyy = document.getElementById("projectmanagement2");
+            if (xyy.style.display === "block") {
+                xyy.style.display = "none";
+            } else {
+                xyy.style.display = "none";
+            }        
+             var btnbb = document.getElementById("anotherbutton");
+             if (btnbb.style.display === "block") {
+              btnbb.style.display = "none";
+              } else {
+              btnbb.style.display = "none";
+        }  
+             var wwww = document.getElementById("justmorebuttons");
+             if (wwww.style.display === "none") {
+              wwww.style.display = "block";
+              } else {
+              wwww.style.display = "none";
+        }    
+   }
+function showPmLooper2() {
+      var vbb = document.getElementById("moreprojectmanagement2");
+      if (vbb.style.display === "block") {
+         vbb.style.display = "none";
+      } else {
+       vbb.style.display = "none";
+      }
+      var xyyz = document.getElementById("projectmanagement3");
+            if (xyyz.style.display === "none") {
+                xyyz.style.display = "block";
+            } else {
+                xyyz.style.display = "none";
+            }
+             var qqq = document.getElementById("hrbutton");
+             if (qqq.style.display === "none") {
+              qqq.style.display = "block";
+              } else {
+              qqq.style.display = "none";
+        }   
+   }
+         
+//END PROJECT MANAGEMENT
+
+//START HR
+
+function showHr() {
+     var hrshow = document.getElementById("humanresourcesandsuch");
+         if (hrshow.style.display === "none") {
+             hrshow.style.display = "block";
+            } else {
+             hrshow.style.display = "none";
+            }  
+      var button = document.getElementById("hrlast");
+      if (button.style.display === "none") {
+      button.style.display = "block";
+       }  
+      var rrrx = document.getElementById("projectmanagement2");
+      if (rrrx.style.display === "block") {
+         rrrx.style.display = "none";
+      } else {
+       rrrx.style.display = "none";
+      }
+      var rrrz = document.getElementById("projectmanagement");
+      if (rrrz.style.display === "block") {
+         rrrz.style.display = "none";
+      } else {
+       rrrz.style.display = "none";
+      }
+            var axyyz = document.getElementById("projectmanagement3");
+            if (axyyz.style.display === "block") {
+                axyyz.style.display = "none";
+            } else {
+                axyyz.style.display = "none";
+            }
+      var rrrg = document.getElementById("moreprojectmanagement2");
+      if (rrrg.style.display === "block") {
+         rrrg.style.display = "none";
+      } else {
+       rrrg.style.display = "none";
+      }
+      var rrrn = document.getElementById("moreprojectmanagement");
+      if (rrrn.style.display === "block") {
+         rrrn.style.display = "none";
+      } else {
+       rrrn.style.display = "none";
+      }  
+      var mmm = document.getElementById("hrbutton");
+         if (mmm.style.display === "block") {
+         mmm.style.display = "none";
+         } else {
+         mmm.style.display = "none";
+        } 
+   }
+
+//END HR
+
+//START END
+
+function showEnd() {
+      var dtp = document.getElementById("humanresourcesandsuch");
+      if (dtp.style.display === "block") {
+         dtp.style.display = "none";
+      } else {
+       v.style.display = "none";
+      }
+          var preend = document.getElementById("theend");
+            if (preend.style.display === "none") {
+                preend.style.display = "block";
+            } else {
+                preend.style.display = "none";
+            }   
+             var kk = document.getElementById("hrlast");
+             if (kk.style.display === "block") {
+              kk.style.display = "none";
+              } else {
+              kk.style.display = "none";
+        }       
+   }
+
+//END END
+
+function grandTotal(){
+
+//START GRAND TOTAL
+var items = $('.sub_t'),
+    cashOut = $('#grand_total'),
+    sum = 0;
+
+$.each(items, function(value) {
+  // items[value] will contain an HTML element, representing an 'item'.
+  var itemValue = parseFloat(items[value].innerHTML);
+  sum += !isNaN(itemValue) ? itemValue : 0;
+  //console.log(sum);
+});
+
+cashOut.html('<h6>Total: $' + Math.ceil(sum) + '</h6>');
+//END GRAND TOTAL
+}
+
+//Permissions
+$('#permissions').on('change', function() {
+        var selected = $(this).find('option:selected').text();
+        $('#permissions').text();
+var obj = (this.value);
+$(document).ready(function() {
+  var myObj = JSON.parse(obj);
+  var x = myObj.multiplier_level;
+  var yourchoice1 = myObj.feature_option;
+document.getElementById("p0").innerHTML = x;
+document.getElementById("yourchoice1").innerHTML = '<strong>Permissions Management:</strong> ' + yourchoice1;
+//Math part
+var items = $('.item'),
+    tot = $('#tot'),
+    sum = 0;
+
+$.each(items, function(value) {
+  var itemValue = parseInt(items[value].innerHTML);
+  sum += !isNaN(itemValue) ? itemValue : 0;
+  avg = Math.ceil(sum/3);
+  document.getElementById("tot").innerHTML = avg;
+
+});
+
+});
+
+});
+
+//View
+$('#view').on('change', function() {
+        var selected = $(this).find('option:selected').text();
+        $('#view').text();
+var obj = (this.value);
+$(document).ready(function() {
+  var myObj = JSON.parse(obj);
+  var x = myObj.multiplier_level;
+  var yourchoice2 = myObj.feature_option;
+document.getElementById("v1").innerHTML = x;
+document.getElementById("yourchoice2").innerHTML = '<strong>Date View Options:</strong> ' + yourchoice2;
+//Math part
+var items = $('.item'),
+    tot = $('#tot'),
+    sum = 0;
+
+$.each(items, function(value) {
+  var itemValue = parseInt(items[value].innerHTML);
+  sum += !isNaN(itemValue) ? itemValue : 0;
+  avg = Math.ceil(sum/3);
+  document.getElementById("tot").innerHTML = avg;
+
+});
+
+});
+
+});
+
+//Compare
+$('#compare').on('change', function() {
+        var selected = $(this).find('option:selected').text();
+        $('#compare').text();
+var obj = (this.value);
+$(document).ready(function() {
+  var myObj = JSON.parse(obj);
+  var x = myObj.multiplier_level;
+  var yourchoice3 = myObj.feature_option;
+document.getElementById("c2").innerHTML = x;
+document.getElementById("yourchoice3").innerHTML = '<strong>Comparative Views:</strong> ' + yourchoice3;
+//Math part
+var items = $('.item'),
+    tot = $('#tot'),
+    sum = 0;
+
+$.each(items, function(value) {
+  var itemValue = parseInt(items[value].innerHTML);
+  sum += !isNaN(itemValue) ? itemValue : 0;
+  avg = Math.ceil(sum/3);
+  document.getElementById("tot").innerHTML = avg;
+});
+
+});
+
+});
+
+
+// START ERP
+$('#erp').on('change', function() {
+    var selected = $(this).find('option:selected').text();
+  $('#platform').text();
+var obj = (this.value);
+$(document).ready(function() {
+  var myObj = JSON.parse(obj);
+  var x = myObj.platform;
+  var y = myObj.base_price;
+  var z = myObj.level;
+document.getElementById("f0").innerHTML = x;
+document.getElementById("erpselect").innerHTML = '<strong>ERP:</strong> ' + x;
+document.getElementById("f1").innerHTML = y;
+document.getElementById("f2").innerHTML = z;
+var multi = '[{"Base_Level":"1","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"1","Feature_Level":"2","Multiplier":"1.3"},{"Base_Level":"1","Feature_Level":"3","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"2","Feature_Level":"2","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"3","Multiplier":"2.75"},{"Base_Level":"3","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"3","Feature_Level":"2","Multiplier":"2.5"},{"Base_Level":"3","Feature_Level":"3","Multiplier":"3.5"},{"Base_Level":"4","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"4","Feature_Level":"2","Multiplier":"3"},{"Base_Level":"4","Feature_Level":"3","Multiplier":"5"},{"Base_Level":"0","Feature_Level":"0","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"1","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"2","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"3","Multiplier":"0"}]';
+var obj2 = multi;
+var myObj2 = JSON.parse(obj2);
+var filter = "Base_Level";
+var keyword = z;
+
+const fil = myObj2.filter(function(obj) {
+  return obj[filter] === keyword;
+});
+  //Get the Multiplier
+  var out = fil.map(({ Feature_Level, Multiplier }) => ({ Feature_Level, Multiplier }));
+out.forEach(function(out) {
+  var n = out.Feature_Level;
+  var m = out.Multiplier;
+      if (n == avg){
+        parseInt(m);
+        document.getElementById("f3").innerHTML = m;
+      }
+  })    
+
+
+//Math part row
+var row = $('.ritem'),
+  row2 = $('.multi');
+  $.each(row2, function(value2) {
+  var val1 = parseInt(row[value2].innerHTML);
+  var val2 = row2[value2].innerHTML;
+  var rtot = val1 * val2;
+  console.log(val1);
+  console.log(val2);
+  console.log(rtot);
+document.getElementById("rtot").innerHTML = rtot;
+
+grandTotal();
+
+});
+
+});
+
+});
+
+// END ERP
+
+// START WAREHOUSE
+// NOTE: Change the select ID
+$('#datawarehouse').on('change', function() {
+        var selected = $(this).find('option:selected').text();
+	$('#platform').text();
+var obj = (this.value);
+$(document).ready(function() {
+  var myObj = JSON.parse(obj);
+  var x = myObj.platform;
+  var y = myObj.base_price;
+  var z = myObj.level;
+document.getElementById("g0").innerHTML = x; //NOTE: Change element id to reflect the correct one
+document.getElementById("whselect").innerHTML = '<strong>Data Warehouse:</strong> ' + x;
+document.getElementById("g1").innerHTML = y; //NOTE: Change element id to reflect the correct one
+document.getElementById("g2").innerHTML = z; //NOTE: Change element id to reflect the correct one
+var multi = '[{"Base_Level":"1","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"1","Feature_Level":"2","Multiplier":"1.3"},{"Base_Level":"1","Feature_Level":"3","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"2","Feature_Level":"2","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"3","Multiplier":"2.75"},{"Base_Level":"3","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"3","Feature_Level":"2","Multiplier":"2.5"},{"Base_Level":"3","Feature_Level":"3","Multiplier":"3.5"},{"Base_Level":"4","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"4","Feature_Level":"2","Multiplier":"3"},{"Base_Level":"4","Feature_Level":"3","Multiplier":"5"},{"Base_Level":"0","Feature_Level":"0","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"1","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"2","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"3","Multiplier":"0"}]';
+var obj2 = multi;
+var myObj2 = JSON.parse(obj2);
+var filter = "Base_Level";
+var keyword = z;
+var fil1 = myObj2.filter(function(obj) {
+	return obj[filter] === keyword;
+});
+
+//Get the Multiplier
+//NOTE: Change element id - increment by 1 - out1, out2, etc - fil1, fil2, etc
+const out1 = fil1.map(({ Feature_Level, Multiplier }) => ({ Feature_Level, Multiplier }));
+out1.forEach(function(out1) {
+	var n = out1.Feature_Level; //NOTE: Change element id - increment by 1
+	var m1 = out1.Multiplier; //NOTE: Change element id - increment by 1
+		  if (n == avg){
+		  	parseInt(m1); //NOTE: Change element id - increment by 1
+		  	document.getElementById("g3").innerHTML = m1; //NOTE: Change element id - increment by 1
+		  }
+})
+
+//Math part row
+var row1 = $('.ritem1'), //NOTE: Change element id - increment by 1 - increment row by 1
+	row3 = $('.multi1'); //NOTE: Change element id - increment by 1 - increment row by 1
+	$.each(row3, function(value3) {
+  var val1 = parseInt(row1[value3].innerHTML); //NOTE: Change element id - increment by 1 and value id
+  var val2 = row3[value3].innerHTML; //NOTE: Change element id - increment by 1 and value id
+  var rtot1 = val1 * val2; 
+  console.log(val1);
+  console.log(val2);
+  console.log(rtot1);
+document.getElementById("rtot1").innerHTML = rtot1; //NOTE: Change element id - increment by 1
+
+grandTotal();
+
+});
+
+});
+
+});
+
+// END WAREHOUSE
+
+// START Cloud Document Storage
+// NOTE: Change the select ID
+$('#cloud').on('change', function() {
+        var selected = $(this).find('option:selected').text();
+	$('#platform').text();
+var obj = (this.value);
+$(document).ready(function() {
+  var myObj = JSON.parse(obj);
+  var x = myObj.platform;
+  var y = myObj.base_price;
+  var z = myObj.level;
+document.getElementById("h0").innerHTML = x; //NOTE: Change element id to reflect the correct one
+document.getElementById("cloudselect").innerHTML = '<strong>Cloud Document Storage:</strong> ' + x;
+document.getElementById("h1").innerHTML = y; //NOTE: Change element id to reflect the correct one
+document.getElementById("h2").innerHTML = z; //NOTE: Change element id to reflect the correct one
+var multi = '[{"Base_Level":"1","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"1","Feature_Level":"2","Multiplier":"1.3"},{"Base_Level":"1","Feature_Level":"3","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"2","Feature_Level":"2","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"3","Multiplier":"2.75"},{"Base_Level":"3","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"3","Feature_Level":"2","Multiplier":"2.5"},{"Base_Level":"3","Feature_Level":"3","Multiplier":"3.5"},{"Base_Level":"4","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"4","Feature_Level":"2","Multiplier":"3"},{"Base_Level":"4","Feature_Level":"3","Multiplier":"5"},{"Base_Level":"0","Feature_Level":"0","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"1","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"2","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"3","Multiplier":"0"}]';
+var obj3 = multi; //NOTE: Increment by 1
+var myObj3 = JSON.parse(obj3); //NOTE: Increment by 1
+var filter = "Base_Level";
+var keyword = z; //NOTE: Increment by 1 - fil1, fil2, etc.
+var fil2 = myObj3.filter(function(obj) {
+	return obj[filter] === keyword;
+});
+
+//Get the Multiplier
+//NOTE: Change element id - increment by 1 - out1, out2, etc - fil1, fil2, etc
+const out2 = fil2.map(({ Feature_Level, Multiplier }) => ({ Feature_Level, Multiplier }));
+out2.forEach(function(out2) {
+	var n1 = out2.Feature_Level; //NOTE: Change element id - increment by 1
+	var m2 = out2.Multiplier; //NOTE: Change element id - increment by 1
+		  if (n1 == avg){
+		  	parseInt(m2); //NOTE: Change element id - increment by 1
+		  	document.getElementById("h3").innerHTML = m2; //NOTE: Change element id - increment by 1
+		  }
+})
+
+//Math part row
+var row2 = $('.ritem2'), //NOTE: Change element id - increment by 1 - increment row by 1
+	row4 = $('.multi2'); //NOTE: Change element id - increment by 1 - increment row by 1
+	$.each(row4, function(value4) {
+  var val1 = parseInt(row2[value4].innerHTML); //NOTE: Change element id - increment by 1 and value id
+  var val2 = row4[value4].innerHTML; //NOTE: Change element id - increment by 1 and value id
+  var rtot2 = val1 * val2; //NOTE: Change element id - increment by 1
+  console.log(val1);
+  console.log(val2);
+  console.log(rtot2);
+document.getElementById("rtot2").innerHTML = rtot2; //NOTE: Change element id - increment by 1
+
+grandTotal();
+
+});
+
+});
+
+});
+
+// END Cloud Document Storage
+
+// START CRM
+// NOTE: Change the select ID
+$('#crm').on('change', function() {
+        var selected = $(this).find('option:selected').text();
+	$('#platform').text();
+var obj = (this.value);
+$(document).ready(function() {
+  var myObj = JSON.parse(obj);
+  var x = myObj.platform;
+  var y = myObj.base_price;
+  var z = myObj.level;
+document.getElementById("i0").innerHTML = x; //NOTE: Change element id to reflect the correct one
+document.getElementById("crmselect").innerHTML = '<strong>CRM:</strong> ' + x;
+document.getElementById("i1").innerHTML = y; //NOTE: Change element id to reflect the correct one
+document.getElementById("i2").innerHTML = z; //NOTE: Change element id to reflect the correct one
+var multi = '[{"Base_Level":"1","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"1","Feature_Level":"2","Multiplier":"1.3"},{"Base_Level":"1","Feature_Level":"3","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"2","Feature_Level":"2","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"3","Multiplier":"2.75"},{"Base_Level":"3","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"3","Feature_Level":"2","Multiplier":"2.5"},{"Base_Level":"3","Feature_Level":"3","Multiplier":"3.5"},{"Base_Level":"4","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"4","Feature_Level":"2","Multiplier":"3"},{"Base_Level":"4","Feature_Level":"3","Multiplier":"5"},{"Base_Level":"0","Feature_Level":"0","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"1","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"2","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"3","Multiplier":"0"}]';
+var obj4 = multi; //NOTE: Increment by 1
+var myObj4 = JSON.parse(obj4); //NOTE: Increment by 1
+var filter = "Base_Level";
+var keyword = z; //NOTE: Increment by 1 - fil1, fil2, etc.
+var fil3 = myObj4.filter(function(obj) {
+	return obj[filter] === keyword;
+});
+
+//Get the Multiplier
+//NOTE: Change element id - increment by 1 - out1, out2, etc - fil1, fil2, etc
+const out3 = fil3.map(({ Feature_Level, Multiplier }) => ({ Feature_Level, Multiplier }));
+out3.forEach(function(out3) {
+	var n2 = out3.Feature_Level; //NOTE: Change element id - increment by 1
+	var m3 = out3.Multiplier; //NOTE: Change element id - increment by 1
+		  if (n2 == avg){
+		  	parseInt(m3); //NOTE: Change element id - increment by 1
+		  	document.getElementById("i3").innerHTML = m3; //NOTE: Change element id - increment by 1
+		  }
+})
+
+//Math part row
+var row3 = $('.ritem3'), //NOTE: Change element id - increment by 1 - increment row by 1
+	row5 = $('.multi3'); //NOTE: Change element id - increment by 1 - increment row by 1
+	$.each(row5, function(value5) {
+  var val1 = parseInt(row3[value5].innerHTML); //NOTE: Change element id - increment by 1 and value id
+  var val2 = row5[value5].innerHTML; //NOTE: Change element id - increment by 1 and value id
+  var rtot3 = val1 * val2; //NOTE: Change element id - increment by 1
+  console.log(val1);
+  console.log(val2);
+  console.log(rtot3);
+document.getElementById("rtot3").innerHTML = rtot3; //NOTE: Change element id - increment by 1
+
+grandTotal();
+
+});
+
+});
+
+});
+
+// END CRM
+
+// START Finance
+// NOTE: Change the select ID
+$('#fin').on('change', function() {
+        var selected = $(this).find('option:selected').text();
+	$('#platform').text();
+var obj = (this.value);
+$(document).ready(function() {
+  var myObj = JSON.parse(obj);
+  var x = myObj.platform;
+  var y = myObj.base_price;
+  var z = myObj.level;
+document.getElementById("j0").innerHTML = x; //NOTE: Change element id to reflect the correct one
+document.getElementById("finselect").innerHTML = '<strong>Finance:</strong> ' + x;
+document.getElementById("j1").innerHTML = y; //NOTE: Change element id to reflect the correct one
+document.getElementById("j2").innerHTML = z; //NOTE: Change element id to reflect the correct one
+var multi = '[{"Base_Level":"1","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"1","Feature_Level":"2","Multiplier":"1.3"},{"Base_Level":"1","Feature_Level":"3","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"2","Feature_Level":"2","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"3","Multiplier":"2.75"},{"Base_Level":"3","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"3","Feature_Level":"2","Multiplier":"2.5"},{"Base_Level":"3","Feature_Level":"3","Multiplier":"3.5"},{"Base_Level":"4","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"4","Feature_Level":"2","Multiplier":"3"},{"Base_Level":"4","Feature_Level":"3","Multiplier":"5"},{"Base_Level":"0","Feature_Level":"0","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"1","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"2","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"3","Multiplier":"0"}]';
+var obj5 = multi; //NOTE: Increment by 1
+var myObj5 = JSON.parse(obj5); //NOTE: Increment by 1
+var filter = "Base_Level";
+var keyword = z; //NOTE: Increment by 1 - fil1, fil2, etc.
+var fil4 = myObj5.filter(function(obj) {
+	return obj[filter] === keyword;
+});
+
+//Get the Multiplier
+//NOTE: Change element id - increment by 1 - out1, out2, etc - fil1, fil2, etc
+const out4 = fil4.map(({ Feature_Level, Multiplier }) => ({ Feature_Level, Multiplier }));
+out4.forEach(function(out4) {
+	var n3 = out4.Feature_Level; //NOTE: Change element id - increment by 1
+	var m4 = out4.Multiplier; //NOTE: Change element id - increment by 1
+		  if (n3 == avg){
+		  	parseInt(m4); //NOTE: Change element id - increment by 1
+		  	document.getElementById("j3").innerHTML = m4; //NOTE: Change element id - increment by 1
+		  }
+})
+
+//Math part row
+var row4 = $('.ritem4'), //NOTE: Change element id - increment by 1 - increment row by 1
+	row6 = $('.multi4'); //NOTE: Change element id - increment by 1 - increment row by 1
+	$.each(row6, function(value6) {
+  var val1 = parseInt(row4[value6].innerHTML); //NOTE: Change element id - increment by 1 and value id
+  var val2 = row6[value6].innerHTML; //NOTE: Change element id - increment by 1 and value id
+  var rtot4 = val1 * val2; //NOTE: Change element id - increment by 1
+  console.log(val1);
+  console.log(val2);
+  console.log(rtot4);
+document.getElementById("rtot4").innerHTML = rtot4; //NOTE: Change element id - increment by 1
+
+grandTotal();
+
+});
+
+});
+
+});
+
+// END Finance
+
+// START Social
+// NOTE: Change the select ID
+$('#social').on('change', function() {
+        var selected = $(this).find('option:selected').text();
+	$('#platform').text();
+var obj = (this.value);
+$(document).ready(function() {
+  var myObj = JSON.parse(obj);
+  var x = myObj.platform;
+  var y = myObj.base_price;
+  var z = myObj.level;
+document.getElementById("k0").innerHTML = x; //NOTE: Change element id to reflect the correct one
+document.getElementById("socialselect").innerHTML = '<strong>Social:</strong> ' + x;
+document.getElementById("k1").innerHTML = y; //NOTE: Change element id to reflect the correct one
+document.getElementById("k2").innerHTML = z; //NOTE: Change element id to reflect the correct one
+var multi = '[{"Base_Level":"1","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"1","Feature_Level":"2","Multiplier":"1.3"},{"Base_Level":"1","Feature_Level":"3","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"2","Feature_Level":"2","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"3","Multiplier":"2.75"},{"Base_Level":"3","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"3","Feature_Level":"2","Multiplier":"2.5"},{"Base_Level":"3","Feature_Level":"3","Multiplier":"3.5"},{"Base_Level":"4","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"4","Feature_Level":"2","Multiplier":"3"},{"Base_Level":"4","Feature_Level":"3","Multiplier":"5"},{"Base_Level":"0","Feature_Level":"0","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"1","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"2","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"3","Multiplier":"0"}]';
+var obj6 = multi; //NOTE: Increment by 1
+var myObj6 = JSON.parse(obj6); //NOTE: Increment by 1
+var filter = "Base_Level";
+var keyword = z; //NOTE: Increment by 1 - fil1, fil2, etc.
+var fil5 = myObj6.filter(function(obj) {
+	return obj[filter] === keyword;
+});
+
+//Get the Multiplier
+//NOTE: Change element id - increment by 1 - out1, out2, etc - fil1, fil2, etc
+const out5 = fil5.map(({ Feature_Level, Multiplier }) => ({ Feature_Level, Multiplier }));
+out5.forEach(function(out5) {
+	var n4 = out5.Feature_Level; //NOTE: Change element id - increment by 1
+	var m5 = out5.Multiplier; //NOTE: Change element id - increment by 1
+		  if (n4 == avg){
+		  	parseInt(m5); //NOTE: Change element id - increment by 1
+		  	document.getElementById("k3").innerHTML = m5; //NOTE: Change element id - increment by 1
+		  }
+})
+
+//Math part row
+var row5 = $('.ritem5'), //NOTE: Change element id - increment by 1 - increment row by 1
+	row7 = $('.multi5'); //NOTE: Change element id - increment by 1 - increment row by 1
+	$.each(row7, function(value7) {
+  var val1 = parseInt(row5[value7].innerHTML); //NOTE: Change element id - increment by 1 and value id
+  var val2 = row7[value7].innerHTML; //NOTE: Change element id - increment by 1 and value id
+  var rtot5 = val1 * val2; //NOTE: Change element id - increment by 1
+  console.log(val1);
+  console.log(val2);
+  console.log(rtot5);
+document.getElementById("rtot5").innerHTML = rtot5; //NOTE: Change element id - increment by 1
+
+grandTotal();
+
+});
+
+});
+
+});
+
+// END Social
+
+// START Social2
+// NOTE: Change the select ID
+$('#social2').on('change', function() {
+        var selected = $(this).find('option:selected').text();
+	$('#platform').text();
+var obj = (this.value);
+$(document).ready(function() {
+  var myObj = JSON.parse(obj);
+  var x = myObj.platform;
+  var y = myObj.base_price;
+  var z = myObj.level;
+document.getElementById("l0").innerHTML = x; //NOTE: Change element id to reflect the correct one
+document.getElementById("socialselect2").innerHTML = '<strong>Social 2:</strong> ' + x;
+document.getElementById("l1").innerHTML = y; //NOTE: Change element id to reflect the correct one
+document.getElementById("l2").innerHTML = z; //NOTE: Change element id to reflect the correct one
+var multi = '[{"Base_Level":"1","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"1","Feature_Level":"2","Multiplier":"1.3"},{"Base_Level":"1","Feature_Level":"3","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"2","Feature_Level":"2","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"3","Multiplier":"2.75"},{"Base_Level":"3","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"3","Feature_Level":"2","Multiplier":"2.5"},{"Base_Level":"3","Feature_Level":"3","Multiplier":"3.5"},{"Base_Level":"4","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"4","Feature_Level":"2","Multiplier":"3"},{"Base_Level":"4","Feature_Level":"3","Multiplier":"5"},{"Base_Level":"0","Feature_Level":"0","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"1","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"2","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"3","Multiplier":"0"}]';
+var obj7 = multi; //NOTE: Increment by 1
+var myObj7 = JSON.parse(obj7); //NOTE: Increment by 1
+var filter = "Base_Level";
+var keyword = z; //NOTE: Increment by 1 - fil1, fil2, etc.
+var fil7 = myObj7.filter(function(obj) {
+	return obj[filter] === keyword;
+});
+
+//Get the Multiplier
+//NOTE: Change element id - increment by 1 - out1, out2, etc - fil1, fil2, etc
+const out7 = fil7.map(({ Feature_Level, Multiplier }) => ({ Feature_Level, Multiplier }));
+out7.forEach(function(out7) {
+	var n5 = out7.Feature_Level; //NOTE: Change element id - increment by 1
+	var m6 = out7.Multiplier; //NOTE: Change element id - increment by 1
+		  if (n5 == avg){
+		  	parseInt(m6); //NOTE: Change element id - increment by 1
+		  	document.getElementById("l3").innerHTML = m6; //NOTE: Change element id - increment by 1
+		  }
+})
+
+//Math part row
+var row7 = $('.ritem6'), //NOTE: Change element id - increment by 1 - increment row by 1
+	row8 = $('.multi6'); //NOTE: Change element id - increment by 1 - increment row by 1
+	$.each(row8, function(value8) {
+  var val1 = parseInt(row7[value8].innerHTML); //NOTE: Change element id - increment by 1 and value id
+  var val2 = row8[value8].innerHTML; //NOTE: Change element id - increment by 1 and value id
+  var rtot7 = val1 * val2; //NOTE: Change element id - increment by 1
+  console.log(val1);
+  console.log(val2);
+  console.log(rtot7);
+document.getElementById("rtot6").innerHTML = rtot7; //NOTE: Change element id - increment by 1
+
+grandTotal();
+
+});
+
+});
+
+});
+
+// END Social2
+
+// START Social3
+// NOTE: Change the select ID
+$('#social3').on('change', function() {
+        var selected = $(this).find('option:selected').text();
+	$('#platform').text();
+var obj = (this.value);
+$(document).ready(function() {
+  var myObj = JSON.parse(obj);
+  var x = myObj.platform;
+  var y = myObj.base_price;
+  var z = myObj.level;
+document.getElementById("m0").innerHTML = x; //NOTE: Change element id to reflect the correct one
+document.getElementById("socialselect3").innerHTML = '<strong>Social 3:</strong> ' + x;
+document.getElementById("m1").innerHTML = y; //NOTE: Change element id to reflect the correct one
+document.getElementById("m2").innerHTML = z; //NOTE: Change element id to reflect the correct one
+var multi = '[{"Base_Level":"1","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"1","Feature_Level":"2","Multiplier":"1.3"},{"Base_Level":"1","Feature_Level":"3","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"2","Feature_Level":"2","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"3","Multiplier":"2.75"},{"Base_Level":"3","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"3","Feature_Level":"2","Multiplier":"2.5"},{"Base_Level":"3","Feature_Level":"3","Multiplier":"3.5"},{"Base_Level":"4","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"4","Feature_Level":"2","Multiplier":"3"},{"Base_Level":"4","Feature_Level":"3","Multiplier":"5"},{"Base_Level":"0","Feature_Level":"0","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"1","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"2","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"3","Multiplier":"0"}]';
+var obj8 = multi; //NOTE: Increment by 1
+var myObj8 = JSON.parse(obj8); //NOTE: Increment by 1
+var filter = "Base_Level";
+var keyword = z; //NOTE: Increment by 1 - fil1, fil2, etc.
+var fil8 = myObj8.filter(function(obj) {
+	return obj[filter] === keyword;
+});
+
+//Get the Multiplier
+//NOTE: Change element id - increment by 1 - out1, out2, etc - fil1, fil2, etc
+const out8 = fil8.map(({ Feature_Level, Multiplier }) => ({ Feature_Level, Multiplier }));
+out8.forEach(function(out8) {
+	var n8 = out8.Feature_Level; //NOTE: Change element id - increment by 1
+	var m8 = out8.Multiplier; //NOTE: Change element id - increment by 1
+		  if (n8 == avg){
+		  	parseInt(m8); //NOTE: Change element id - increment by 1
+		  	document.getElementById("m3").innerHTML = m8; //NOTE: Change element id - increment by 1
+		  }
+})
+
+//Math part row
+var row9 = $('.ritem7'), //NOTE: Change element id - increment by 1 - increment row by 1
+	row10 = $('.multi7'); //NOTE: Change element id - increment by 1 - increment row by 1
+	$.each(row9, function(value9) {
+  var val1 = parseInt(row9[value9].innerHTML); //NOTE: Change element id - increment by 1 and value id
+  var val2 = row10[value9].innerHTML; //NOTE: Change element id - increment by 1 and value id
+  var rtot8 = val1 * val2; //NOTE: Change element id - increment by 1
+  console.log(val1);
+  console.log(val2);
+  console.log(rtot8);
+document.getElementById("rtot7").innerHTML = rtot8; //NOTE: Change element id - increment by 1
+
+grandTotal();
+
+});
+
+});
+
+});
+
+// END Social3
+
+// START Social4
+// NOTE: Change the select ID
+$('#social4').on('change', function() {
+        var selected = $(this).find('option:selected').text();
+	$('#platform').text();
+var obj = (this.value);
+$(document).ready(function() {
+  var myObj = JSON.parse(obj);
+  var x = myObj.platform;
+  var y = myObj.base_price;
+  var z = myObj.level;
+document.getElementById("n0").innerHTML = x; //NOTE: Change element id to reflect the correct one
+document.getElementById("socialselect4").innerHTML = '<strong>Social 4:</strong> ' + x;
+document.getElementById("n1").innerHTML = y; //NOTE: Change element id to reflect the correct one
+document.getElementById("n2").innerHTML = z; //NOTE: Change element id to reflect the correct one
+var multi = '[{"Base_Level":"1","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"1","Feature_Level":"2","Multiplier":"1.3"},{"Base_Level":"1","Feature_Level":"3","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"2","Feature_Level":"2","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"3","Multiplier":"2.75"},{"Base_Level":"3","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"3","Feature_Level":"2","Multiplier":"2.5"},{"Base_Level":"3","Feature_Level":"3","Multiplier":"3.5"},{"Base_Level":"4","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"4","Feature_Level":"2","Multiplier":"3"},{"Base_Level":"4","Feature_Level":"3","Multiplier":"5"},{"Base_Level":"0","Feature_Level":"0","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"1","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"2","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"3","Multiplier":"0"}]';
+var obj9 = multi; //NOTE: Increment by 1
+var myObj9 = JSON.parse(obj9); //NOTE: Increment by 1
+var filter = "Base_Level";
+var keyword = z; //NOTE: Increment by 1 - fil1, fil2, etc.
+var fil9 = myObj9.filter(function(obj) {
+	return obj[filter] === keyword;
+});
+
+//Get the Multiplier
+//NOTE: Change element id - increment by 1 - out1, out2, etc - fil1, fil2, etc
+const out9 = fil9.map(({ Feature_Level, Multiplier }) => ({ Feature_Level, Multiplier }));
+out9.forEach(function(out9) {
+	var n9 = out9.Feature_Level; //NOTE: Change element id - increment by 1
+	var m9 = out9.Multiplier; //NOTE: Change element id - increment by 1
+		  if (n9 == avg){
+		  	parseInt(m9); //NOTE: Change element id - increment by 1
+		  	document.getElementById("n3").innerHTML = m9; //NOTE: Change element id - increment by 1
+		  }
+})
+
+//Math part row
+var row10 = $('.ritem8'), //NOTE: Change element id - increment by 1 - increment row by 1
+	row11 = $('.multi8'); //NOTE: Change element id - increment by 1 - increment row by 1
+	$.each(row10, function(value10) {
+  var val1 = parseInt(row10[value10].innerHTML); //NOTE: Change element id - increment by 1 and value id
+  var val2 = row11[value10].innerHTML; //NOTE: Change element id - increment by 1 and value id
+  var rtot9 = val1 * val2; //NOTE: Change element id - increment by 1
+  console.log(val1);
+  console.log(val2);
+  console.log(rtot9);
+document.getElementById("rtot8").innerHTML = rtot9; //NOTE: Change element id - increment by 1
+
+grandTotal();
+
+});
+
+});
+
+});
+
+// END Social4
+
+// START Marketing
+// NOTE: Change the select ID
+$('#mkt').on('change', function() {
+        var selected = $(this).find('option:selected').text();
+	$('#platform').text();
+var obj = (this.value);
+$(document).ready(function() {
+  var myObj = JSON.parse(obj);
+  var x = myObj.platform;
+  var y = myObj.base_price;
+  var z = myObj.level;
+document.getElementById("pp0").innerHTML = x; //NOTE: Change element id to reflect the correct one
+document.getElementById("mktselect").innerHTML = '<strong>Marketing:</strong> ' + x;
+document.getElementById("pp1").innerHTML = y; //NOTE: Change element id to reflect the correct one
+document.getElementById("pp2").innerHTML = z; //NOTE: Change element id to reflect the correct one
+var multi = '[{"Base_Level":"1","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"1","Feature_Level":"2","Multiplier":"1.3"},{"Base_Level":"1","Feature_Level":"3","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"2","Feature_Level":"2","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"3","Multiplier":"2.75"},{"Base_Level":"3","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"3","Feature_Level":"2","Multiplier":"2.5"},{"Base_Level":"3","Feature_Level":"3","Multiplier":"3.5"},{"Base_Level":"4","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"4","Feature_Level":"2","Multiplier":"3"},{"Base_Level":"4","Feature_Level":"3","Multiplier":"5"},{"Base_Level":"0","Feature_Level":"0","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"1","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"2","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"3","Multiplier":"0"}]';
+var obj10 = multi; //NOTE: Increment by 1
+var myObj10 = JSON.parse(obj10); //NOTE: Increment by 1
+var filter = "Base_Level";
+var keyword = z; //NOTE: Increment by 1 - fil1, fil2, etc.
+var fil10 = myObj10.filter(function(obj) {
+	return obj[filter] === keyword;
+});
+
+//Get the Multiplier
+//NOTE: Change element id - increment by 1 - out1, out2, etc - fil1, fil2, etc
+const out10 = fil10.map(({ Feature_Level, Multiplier }) => ({ Feature_Level, Multiplier }));
+out10.forEach(function(out10) {
+	var n10 = out10.Feature_Level; //NOTE: Change element id - increment by 1
+	var m10 = out10.Multiplier; //NOTE: Change element id - increment by 1
+		  if (n10 == avg){
+		  	parseInt(m10); //NOTE: Change element id - increment by 1
+		  	document.getElementById("pp3").innerHTML = m10; //NOTE: Change element id - increment by 1
+		  }
+})
+
+//Math part row
+var row11 = $('.ritem9'), //NOTE: Change element id - increment by 1 - increment row by 1
+	row12 = $('.multi9'); //NOTE: Change element id - increment by 1 - increment row by 1
+	$.each(row11, function(value11) {
+  var val1 = parseInt(row11[value11].innerHTML); //NOTE: Change element id - increment by 1 and value id
+  var val2 = row12[value11].innerHTML; //NOTE: Change element id - increment by 1 and value id
+  var rtot10 = val1 * val2; //NOTE: Change element id - increment by 1
+  console.log(val1);
+  console.log(val2);
+  console.log(rtot10);
+document.getElementById("rtot9").innerHTML = rtot10; //NOTE: Change element id - increment by 1
+
+grandTotal();
+
+});
+
+});
+
+});
+
+// END Marketing
+
+// START Digital Ads
+// NOTE: Change the select ID
+$('#digads').on('change', function() {
+        var selected = $(this).find('option:selected').text();
+    $('#platform').text();
+var obj = (this.value);
+$(document).ready(function() {
+  var myObj = JSON.parse(obj);
+  var x = myObj.platform;
+  var y = myObj.base_price;
+  var z = myObj.level;
+document.getElementById("o0").innerHTML = x; //NOTE: Change element id to reflect the correct one
+document.getElementById("digadsselect").innerHTML = '<strong>Digital Ads:</strong> ' + x;
+document.getElementById("o1").innerHTML = y; //NOTE: Change element id to reflect the correct one
+document.getElementById("o2").innerHTML = z; //NOTE: Change element id to reflect the correct one
+var multi = '[{"Base_Level":"1","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"1","Feature_Level":"2","Multiplier":"1.3"},{"Base_Level":"1","Feature_Level":"3","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"2","Feature_Level":"2","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"3","Multiplier":"2.75"},{"Base_Level":"3","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"3","Feature_Level":"2","Multiplier":"2.5"},{"Base_Level":"3","Feature_Level":"3","Multiplier":"3.5"},{"Base_Level":"4","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"4","Feature_Level":"2","Multiplier":"3"},{"Base_Level":"4","Feature_Level":"3","Multiplier":"5"},{"Base_Level":"0","Feature_Level":"0","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"1","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"2","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"3","Multiplier":"0"}]';
+var obj11 = multi; //NOTE: Increment by 1
+var myObj11 = JSON.parse(obj11); //NOTE: Increment by 1
+var filter = "Base_Level";
+var keyword = z; //NOTE: Increment by 1 - fil1, fil2, etc.
+var fil11 = myObj11.filter(function(obj) {
+    return obj[filter] === keyword;
+});
+
+//Get the Multiplier
+//NOTE: Change element id - increment by 1 - out1, out2, etc - fil1, fil2, etc
+const out11 = fil11.map(({ Feature_Level, Multiplier }) => ({ Feature_Level, Multiplier }));
+out11.forEach(function(out11) {
+    var n11 = out11.Feature_Level; //NOTE: Change element id - increment by 1
+    var m11 = out11.Multiplier; //NOTE: Change element id - increment by 1
+          if (n11 == avg){
+            parseInt(m11); //NOTE: Change element id - increment by 1
+            document.getElementById("o3").innerHTML = m11; //NOTE: Change element id - increment by 1
+          }
+})
+
+//Math part row
+var row12 = $('.ritem10'), //NOTE: Change element id - increment by 1 - increment row by 1
+    row13 = $('.multi10'); //NOTE: Change element id - increment by 1 - increment row by 1
+    $.each(row12, function(value12) {
+  var val1 = parseInt(row12[value12].innerHTML); //NOTE: Change element id - increment by 1 and value id
+  var val2 = row13[value12].innerHTML; //NOTE: Change element id - increment by 1 and value id
+  var rtot11 = val1 * val2; //NOTE: Change element id - increment by 1
+  console.log(val1);
+  console.log(val2);
+  console.log(rtot11);
+document.getElementById("rtot10").innerHTML = rtot11; //NOTE: Change element id - increment by 1
+
+grandTotal();
+
+});
+
+});
+
+});
+
+// END Digital Ads
+
+// START Digital Ads2
+// NOTE: Change the select ID
+$('#digads2').on('change', function() {
+        var selected = $(this).find('option:selected').text();
+    $('#platform').text();
+var obj = (this.value);
+$(document).ready(function() {
+  var myObj = JSON.parse(obj);
+  var x = myObj.platform;
+  var y = myObj.base_price;
+  var z = myObj.level;
+document.getElementById("q0").innerHTML = x; //NOTE: Change element id to reflect the correct one
+document.getElementById("digadsselect2").innerHTML = '<strong>Digital Ads 2:</strong> ' + x;
+document.getElementById("q1").innerHTML = y; //NOTE: Change element id to reflect the correct one
+document.getElementById("q2").innerHTML = z; //NOTE: Change element id to reflect the correct one
+var multi = '[{"Base_Level":"1","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"1","Feature_Level":"2","Multiplier":"1.3"},{"Base_Level":"1","Feature_Level":"3","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"2","Feature_Level":"2","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"3","Multiplier":"2.75"},{"Base_Level":"3","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"3","Feature_Level":"2","Multiplier":"2.5"},{"Base_Level":"3","Feature_Level":"3","Multiplier":"3.5"},{"Base_Level":"4","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"4","Feature_Level":"2","Multiplier":"3"},{"Base_Level":"4","Feature_Level":"3","Multiplier":"5"},{"Base_Level":"0","Feature_Level":"0","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"1","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"2","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"3","Multiplier":"0"}]';
+var obj12 = multi; //NOTE: Increment by 1
+var myObj12 = JSON.parse(obj12); //NOTE: Increment by 1
+var filter = "Base_Level";
+var keyword = z; //NOTE: Increment by 1 - fil1, fil2, etc.
+var fil12 = myObj12.filter(function(obj) {
+    return obj[filter] === keyword;
+});
+
+//Get the Multiplier
+//NOTE: Change element id - increment by 1 - out1, out2, etc - fil1, fil2, etc
+const out12 = fil12.map(({ Feature_Level, Multiplier }) => ({ Feature_Level, Multiplier }));
+out12.forEach(function(out12) {
+    var n12 = out12.Feature_Level; //NOTE: Change element id - increment by 1
+    var m12 = out12.Multiplier; //NOTE: Change element id - increment by 1
+          if (n12 == avg){
+            parseInt(m12); //NOTE: Change element id - increment by 1
+            document.getElementById("q3").innerHTML = m12; //NOTE: Change element id - increment by 1
+          }
+})
+
+//Math part row
+var row13 = $('.ritem11'), //NOTE: Change element id - increment by 1 - increment row by 1
+    row14 = $('.multi11'); //NOTE: Change element id - increment by 1 - increment row by 1
+    $.each(row13, function(value13) {
+  var val1 = parseInt(row13[value13].innerHTML); //NOTE: Change element id - increment by 1 and value id
+  var val2 = row14[value13].innerHTML; //NOTE: Change element id - increment by 1 and value id
+  var rtot12 = val1 * val2; //NOTE: Change element id - increment by 1
+  console.log(val1);
+  console.log(val2);
+  console.log(rtot12);
+document.getElementById("rtot11").innerHTML = rtot12; //NOTE: Change element id - increment by 1
+
+grandTotal();
+
+});
+
+});
+
+});
+
+// END Digital Ads2
+
+// START Digital Ads3
+// NOTE: Change the select ID
+$('#digads3').on('change', function() {
+        var selected = $(this).find('option:selected').text();
+    $('#platform').text();
+var obj = (this.value);
+$(document).ready(function() {
+  var myObj = JSON.parse(obj);
+  var x = myObj.platform;
+  var y = myObj.base_price;
+  var z = myObj.level;
+document.getElementById("r0").innerHTML = x; //NOTE: Change element id to reflect the correct one
+document.getElementById("digadsselect3").innerHTML = '<strong>Digital Ads 3:</strong> ' + x;
+document.getElementById("r1").innerHTML = y; //NOTE: Change element id to reflect the correct one
+document.getElementById("r2").innerHTML = z; //NOTE: Change element id to reflect the correct one
+var multi = '[{"Base_Level":"1","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"1","Feature_Level":"2","Multiplier":"1.3"},{"Base_Level":"1","Feature_Level":"3","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"2","Feature_Level":"2","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"3","Multiplier":"2.75"},{"Base_Level":"3","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"3","Feature_Level":"2","Multiplier":"2.5"},{"Base_Level":"3","Feature_Level":"3","Multiplier":"3.5"},{"Base_Level":"4","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"4","Feature_Level":"2","Multiplier":"3"},{"Base_Level":"4","Feature_Level":"3","Multiplier":"5"},{"Base_Level":"0","Feature_Level":"0","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"1","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"2","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"3","Multiplier":"0"}]';
+var obj13 = multi; //NOTE: Increment by 1
+var myObj13 = JSON.parse(obj13); //NOTE: Increment by 1
+var filter = "Base_Level";
+var keyword = z; //NOTE: Increment by 1 - fil1, fil2, etc.
+var fil13 = myObj13.filter(function(obj) {
+    return obj[filter] === keyword;
+});
+
+//Get the Multiplier
+//NOTE: Change element id - increment by 1 - out1, out2, etc - fil1, fil2, etc
+const out13 = fil13.map(({ Feature_Level, Multiplier }) => ({ Feature_Level, Multiplier }));
+out13.forEach(function(out13) {
+    var n13 = out13.Feature_Level; //NOTE: Change element id - increment by 1
+    var m13 = out13.Multiplier; //NOTE: Change element id - increment by 1
+          if (n13 == avg){
+            parseInt(m13); //NOTE: Change element id - increment by 1
+            document.getElementById("r3").innerHTML = m13; //NOTE: Change element id - increment by 1
+          }
+})
+
+//Math part row
+var row14 = $('.ritem12'), //NOTE: Change element id - increment by 1 - increment row by 1
+    row15 = $('.multi12'); //NOTE: Change element id - increment by 1 - increment row by 1
+    $.each(row14, function(value14) {
+  var val1 = parseInt(row14[value14].innerHTML); //NOTE: Change element id - increment by 1 and value id
+  var val2 = row15[value14].innerHTML; //NOTE: Change element id - increment by 1 and value id
+  var rtot13 = val1 * val2; //NOTE: Change element id - increment by 1
+  console.log(val1);
+  console.log(val2);
+  console.log(rtot13);
+document.getElementById("rtot12").innerHTML = rtot13; //NOTE: Change element id - increment by 1
+
+grandTotal();
+
+});
+
+});
+
+});
+
+// END Digital Ads3
+
+// START Digital Ads4
+// NOTE: Change the select ID
+$('#digads4').on('change', function() {
+        var selected = $(this).find('option:selected').text();
+    $('#platform').text();
+var obj = (this.value);
+$(document).ready(function() {
+  var myObj = JSON.parse(obj);
+  var x = myObj.platform;
+  var y = myObj.base_price;
+  var z = myObj.level;
+document.getElementById("s0").innerHTML = x; //NOTE: Change element id to reflect the correct one
+document.getElementById("digadsselect4").innerHTML = '<strong>Digital Ads 4:</strong> ' + x;
+document.getElementById("s1").innerHTML = y; //NOTE: Change element id to reflect the correct one
+document.getElementById("s2").innerHTML = z; //NOTE: Change element id to reflect the correct one
+var multi = '[{"Base_Level":"1","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"1","Feature_Level":"2","Multiplier":"1.3"},{"Base_Level":"1","Feature_Level":"3","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"2","Feature_Level":"2","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"3","Multiplier":"2.75"},{"Base_Level":"3","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"3","Feature_Level":"2","Multiplier":"2.5"},{"Base_Level":"3","Feature_Level":"3","Multiplier":"3.5"},{"Base_Level":"4","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"4","Feature_Level":"2","Multiplier":"3"},{"Base_Level":"4","Feature_Level":"3","Multiplier":"5"},{"Base_Level":"0","Feature_Level":"0","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"1","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"2","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"3","Multiplier":"0"}]';
+var obj14 = multi; //NOTE: Increment by 1
+var myObj14 = JSON.parse(obj14); //NOTE: Increment by 1
+var filter = "Base_Level";
+var keyword = z; //NOTE: Increment by 1 - fil1, fil2, etc.
+var fil14 = myObj14.filter(function(obj) {
+    return obj[filter] === keyword;
+});
+
+//Get the Multiplier
+//NOTE: Change element id - increment by 1 - out1, out2, etc - fil1, fil2, etc
+const out14 = fil14.map(({ Feature_Level, Multiplier }) => ({ Feature_Level, Multiplier }));
+out14.forEach(function(out14) {
+    var n14 = out14.Feature_Level; //NOTE: Change element id - increment by 1
+    var m14 = out14.Multiplier; //NOTE: Change element id - increment by 1
+          if (n14 == avg){
+            parseInt(m14); //NOTE: Change element id - increment by 1
+            document.getElementById("s3").innerHTML = m14; //NOTE: Change element id - increment by 1
+          }
+})
+
+//Math part row
+var row15 = $('.ritem13'), //NOTE: Change element id - increment by 1 - increment row by 1
+    row16 = $('.multi13'); //NOTE: Change element id - increment by 1 - increment row by 1
+    $.each(row15, function(value15) {
+  var val1 = parseInt(row15[value15].innerHTML); //NOTE: Change element id - increment by 1 and value id
+  var val2 = row16[value15].innerHTML; //NOTE: Change element id - increment by 1 and value id
+  var rtot14 = val1 * val2; //NOTE: Change element id - increment by 1
+  console.log(val1);
+  console.log(val2);
+  console.log(rtot14);
+document.getElementById("rtot13").innerHTML = rtot14; //NOTE: Change element id - increment by 1
+
+grandTotal();
+
+});
+
+});
+
+});
+
+// END Digital Ads4
+
+// START Digital Ops
+// NOTE: Change the select ID
+$('#digops').on('change', function() {
+        var selected = $(this).find('option:selected').text();
+    $('#platform').text();
+var obj = (this.value);
+$(document).ready(function() {
+  var myObj = JSON.parse(obj);
+  var x = myObj.platform;
+  var y = myObj.base_price;
+  var z = myObj.level;
+document.getElementById("t0").innerHTML = x; //NOTE: Change element id to reflect the correct one
+document.getElementById("digopsselect").innerHTML = '<strong>Digital Ops:</strong> ' + x;
+document.getElementById("t1").innerHTML = y; //NOTE: Change element id to reflect the correct one
+document.getElementById("t2").innerHTML = z; //NOTE: Change element id to reflect the correct one
+var multi = '[{"Base_Level":"1","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"1","Feature_Level":"2","Multiplier":"1.3"},{"Base_Level":"1","Feature_Level":"3","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"2","Feature_Level":"2","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"3","Multiplier":"2.75"},{"Base_Level":"3","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"3","Feature_Level":"2","Multiplier":"2.5"},{"Base_Level":"3","Feature_Level":"3","Multiplier":"3.5"},{"Base_Level":"4","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"4","Feature_Level":"2","Multiplier":"3"},{"Base_Level":"4","Feature_Level":"3","Multiplier":"5"},{"Base_Level":"0","Feature_Level":"0","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"1","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"2","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"3","Multiplier":"0"}]';
+var obj15 = multi; //NOTE: Increment by 1
+var myObj15 = JSON.parse(obj15); //NOTE: Increment by 1
+var filter = "Base_Level";
+var keyword = z; //NOTE: Increment by 1 - fil1, fil2, etc.
+var fil15 = myObj15.filter(function(obj) {
+    return obj[filter] === keyword;
+});
+
+//Get the Multiplier
+//NOTE: Change element id - increment by 1 - out1, out2, etc - fil1, fil2, etc
+const out15 = fil15.map(({ Feature_Level, Multiplier }) => ({ Feature_Level, Multiplier }));
+out15.forEach(function(out15) {
+    var n15 = out15.Feature_Level; //NOTE: Change element id - increment by 1
+    var m15 = out15.Multiplier; //NOTE: Change element id - increment by 1
+          if (n15 == avg){
+            parseInt(m15); //NOTE: Change element id - increment by 1
+            document.getElementById("t3").innerHTML = m15; //NOTE: Change element id - increment by 1
+          }
+})
+
+//Math part row
+var row16 = $('.ritem14'), //NOTE: Change element id - increment by 1 - increment row by 1
+    row17 = $('.multi14'); //NOTE: Change element id - increment by 1 - increment row by 1
+    $.each(row16, function(value16) {
+  var val1 = parseInt(row16[value16].innerHTML); //NOTE: Change element id - increment by 1 and value id
+  var val2 = row17[value16].innerHTML; //NOTE: Change element id - increment by 1 and value id
+  var rtot15 = val1 * val2; //NOTE: Change element id - increment by 1
+  console.log(val1);
+  console.log(val2);
+  console.log(rtot15);
+document.getElementById("rtot14").innerHTML = rtot15; //NOTE: Change element id - increment by 1
+
+grandTotal();
+
+});
+
+});
+
+});
+
+// END Digital Ops
+
+// START Digital Ops2
+// NOTE: Change the select ID
+$('#digops2').on('change', function() {
+        var selected = $(this).find('option:selected').text();
+    $('#platform').text();
+var obj = (this.value);
+$(document).ready(function() {
+  var myObj = JSON.parse(obj);
+  var x = myObj.platform;
+  var y = myObj.base_price;
+  var z = myObj.level;
+document.getElementById("u0").innerHTML = x; //NOTE: Change element id to reflect the correct one
+document.getElementById("digopsselect2").innerHTML = '<strong>Digital Ops 2:</strong> ' + x;
+document.getElementById("u1").innerHTML = y; //NOTE: Change element id to reflect the correct one
+document.getElementById("u2").innerHTML = z; //NOTE: Change element id to reflect the correct one
+var multi = '[{"Base_Level":"1","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"1","Feature_Level":"2","Multiplier":"1.3"},{"Base_Level":"1","Feature_Level":"3","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"2","Feature_Level":"2","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"3","Multiplier":"2.75"},{"Base_Level":"3","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"3","Feature_Level":"2","Multiplier":"2.5"},{"Base_Level":"3","Feature_Level":"3","Multiplier":"3.5"},{"Base_Level":"4","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"4","Feature_Level":"2","Multiplier":"3"},{"Base_Level":"4","Feature_Level":"3","Multiplier":"5"},{"Base_Level":"0","Feature_Level":"0","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"1","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"2","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"3","Multiplier":"0"}]';
+var obj16 = multi; //NOTE: Increment by 1
+var myObj16 = JSON.parse(obj16); //NOTE: Increment by 1
+var filter = "Base_Level";
+var keyword = z; //NOTE: Increment by 1 - fil1, fil2, etc.
+var fil16 = myObj16.filter(function(obj) {
+    return obj[filter] === keyword;
+});
+
+//Get the Multiplier
+//NOTE: Change element id - increment by 1 - out1, out2, etc - fil1, fil2, etc
+const out16 = fil16.map(({ Feature_Level, Multiplier }) => ({ Feature_Level, Multiplier }));
+out16.forEach(function(out16) {
+    var n16 = out16.Feature_Level; //NOTE: Change element id - increment by 1
+    var m16 = out16.Multiplier; //NOTE: Change element id - increment by 1
+          if (n16 == avg){
+            parseInt(m16); //NOTE: Change element id - increment by 1
+            document.getElementById("u3").innerHTML = m16; //NOTE: Change element id - increment by 1
+          }
+})
+
+//Math part row
+var row17 = $('.ritem15'), //NOTE: Change element id - increment by 1 - increment row by 1
+    row18 = $('.multi15'); //NOTE: Change element id - increment by 1 - increment row by 1
+    $.each(row17, function(value17) {
+  var val1 = parseInt(row17[value17].innerHTML); //NOTE: Change element id - increment by 1 and value id
+  var val2 = row18[value17].innerHTML; //NOTE: Change element id - increment by 1 and value id
+  var rtot16 = val1 * val2; //NOTE: Change element id - increment by 1
+  console.log(val1);
+  console.log(val2);
+  console.log(rtot16);
+document.getElementById("rtot15").innerHTML = rtot16; //NOTE: Change element id - increment by 1
+
+grandTotal();
+
+});
+
+});
+
+});
+
+// END Digital Ops2
+
+// START Digital Ops3
+// NOTE: Change the select ID
+$('#digops3').on('change', function() {
+        var selected = $(this).find('option:selected').text();
+    $('#platform').text();
+var obj = (this.value);
+$(document).ready(function() {
+  var myObj = JSON.parse(obj);
+  var x = myObj.platform;
+  var y = myObj.base_price;
+  var z = myObj.level;
+document.getElementById("vv0").innerHTML = x; //NOTE: Change element id to reflect the correct one
+document.getElementById("digopsselect3").innerHTML = '<strong>Digital Ops 3:</strong> ' + x;
+document.getElementById("vv1").innerHTML = y; //NOTE: Change element id to reflect the correct one
+document.getElementById("vv2").innerHTML = z; //NOTE: Change element id to reflect the correct one
+var multi = '[{"Base_Level":"1","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"1","Feature_Level":"2","Multiplier":"1.3"},{"Base_Level":"1","Feature_Level":"3","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"2","Feature_Level":"2","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"3","Multiplier":"2.75"},{"Base_Level":"3","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"3","Feature_Level":"2","Multiplier":"2.5"},{"Base_Level":"3","Feature_Level":"3","Multiplier":"3.5"},{"Base_Level":"4","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"4","Feature_Level":"2","Multiplier":"3"},{"Base_Level":"4","Feature_Level":"3","Multiplier":"5"},{"Base_Level":"0","Feature_Level":"0","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"1","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"2","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"3","Multiplier":"0"}]';
+var obj17 = multi; //NOTE: Increment by 1
+var myObj17 = JSON.parse(obj17); //NOTE: Increment by 1
+var filter = "Base_Level";
+var keyword = z; //NOTE: Increment by 1 - fil1, fil2, etc.
+var fil17 = myObj17.filter(function(obj) {
+    return obj[filter] === keyword;
+});
+
+//Get the Multiplier
+//NOTE: Change element id - increment by 1 - out1, out2, etc - fil1, fil2, etc
+const out17 = fil17.map(({ Feature_Level, Multiplier }) => ({ Feature_Level, Multiplier }));
+out17.forEach(function(out17) {
+    var n17 = out17.Feature_Level; //NOTE: Change element id - increment by 1
+    var m17 = out17.Multiplier; //NOTE: Change element id - increment by 1
+          if (n17 == avg){
+            parseInt(m17); //NOTE: Change element id - increment by 1
+            document.getElementById("vv3").innerHTML = m17; //NOTE: Change element id - increment by 1
+          }
+})
+
+//Math part row
+var row18 = $('.ritem16'), //NOTE: Change element id - increment by 1 - increment row by 1
+    row19 = $('.multi16'); //NOTE: Change element id - increment by 1 - increment row by 1
+    $.each(row18, function(value18) {
+  var val1 = parseInt(row18[value18].innerHTML); //NOTE: Change element id - increment by 1 and value id
+  var val2 = row19[value18].innerHTML; //NOTE: Change element id - increment by 1 and value id
+  var rtot17 = val1 * val2; //NOTE: Change element id - increment by 1
+  console.log(val1);
+  console.log(val2);
+  console.log(rtot17);
+document.getElementById("rtot16").innerHTML = rtot17; //NOTE: Change element id - increment by 1
+
+grandTotal();
+
+});
+
+});
+
+});
+
+// END Digital Ops3
+
+// START Digital Ops4
+// NOTE: Change the select ID
+$('#digops4').on('change', function() {
+        var selected = $(this).find('option:selected').text();
+    $('#platform').text();
+var obj = (this.value);
+$(document).ready(function() {
+  var myObj = JSON.parse(obj);
+  var x = myObj.platform;
+  var y = myObj.base_price;
+  var z = myObj.level;
+document.getElementById("vw0").innerHTML = x; //NOTE: Change element id to reflect the correct one
+document.getElementById("digopsselect4").innerHTML = '<strong>Digital Ops 4:</strong> ' + x;
+document.getElementById("vw1").innerHTML = y; //NOTE: Change element id to reflect the correct one
+document.getElementById("vw2").innerHTML = z; //NOTE: Change element id to reflect the correct one
+var multi = '[{"Base_Level":"1","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"1","Feature_Level":"2","Multiplier":"1.3"},{"Base_Level":"1","Feature_Level":"3","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"2","Feature_Level":"2","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"3","Multiplier":"2.75"},{"Base_Level":"3","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"3","Feature_Level":"2","Multiplier":"2.5"},{"Base_Level":"3","Feature_Level":"3","Multiplier":"3.5"},{"Base_Level":"4","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"4","Feature_Level":"2","Multiplier":"3"},{"Base_Level":"4","Feature_Level":"3","Multiplier":"5"},{"Base_Level":"0","Feature_Level":"0","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"1","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"2","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"3","Multiplier":"0"}]';
+var obj18 = multi; //NOTE: Increment by 1
+var myObj18 = JSON.parse(obj18); //NOTE: Increment by 1
+var filter = "Base_Level";
+var keyword = z; //NOTE: Increment by 1 - fil1, fil2, etc.
+var fil18 = myObj18.filter(function(obj) {
+    return obj[filter] === keyword;
+});
+
+//Get the Multiplier
+//NOTE: Change element id - increment by 1 - out1, out2, etc - fil1, fil2, etc
+const out18 = fil18.map(({ Feature_Level, Multiplier }) => ({ Feature_Level, Multiplier }));
+out18.forEach(function(out18) {
+    var n18 = out18.Feature_Level; //NOTE: Change element id - increment by 1
+    var m18 = out18.Multiplier; //NOTE: Change element id - increment by 1
+          if (n18 == avg){
+            parseInt(m18); //NOTE: Change element id - increment by 1
+            document.getElementById("vw3").innerHTML = m18; //NOTE: Change element id - increment by 1
+          }
+})
+
+//Math part row
+var row19 = $('.ritem17'), //NOTE: Change element id - increment by 1 - increment row by 1
+    row20 = $('.multi17'); //NOTE: Change element id - increment by 1 - increment row by 1
+    $.each(row19, function(value19) {
+  var val1 = parseInt(row19[value19].innerHTML); //NOTE: Change element id - increment by 1 and value id
+  var val2 = row20[value19].innerHTML; //NOTE: Change element id - increment by 1 and value id
+  var rtot18 = val1 * val2; //NOTE: Change element id - increment by 1
+  console.log(val1);
+  console.log(val2);
+  console.log(rtot18);
+document.getElementById("rtot17").innerHTML = rtot18; //NOTE: Change element id - increment by 1
+
+grandTotal();
+
+});
+
+});
+
+});
+
+// END Digital Ops4
+
+// START Call Tracking
+// NOTE: Change the select ID
+$('#calltrk').on('change', function() {
+        var selected = $(this).find('option:selected').text();
+    $('#platform').text();
+var obj = (this.value);
+$(document).ready(function() {
+  var myObj = JSON.parse(obj);
+  var x = myObj.platform;
+  var y = myObj.base_price;
+  var z = myObj.level;
+document.getElementById("vwy0").innerHTML = x; //NOTE: Change element id to reflect the correct one
+document.getElementById("calltrackselect").innerHTML = '<strong>Call Tracking:</strong> ' + x;
+document.getElementById("vwy1").innerHTML = y; //NOTE: Change element id to reflect the correct one
+document.getElementById("vwy2").innerHTML = z; //NOTE: Change element id to reflect the correct one
+var multi = '[{"Base_Level":"1","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"1","Feature_Level":"2","Multiplier":"1.3"},{"Base_Level":"1","Feature_Level":"3","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"2","Feature_Level":"2","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"3","Multiplier":"2.75"},{"Base_Level":"3","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"3","Feature_Level":"2","Multiplier":"2.5"},{"Base_Level":"3","Feature_Level":"3","Multiplier":"3.5"},{"Base_Level":"4","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"4","Feature_Level":"2","Multiplier":"3"},{"Base_Level":"4","Feature_Level":"3","Multiplier":"5"},{"Base_Level":"0","Feature_Level":"0","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"1","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"2","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"3","Multiplier":"0"}]';
+var obj19 = multi; //NOTE: Increment by 1
+var myObj19 = JSON.parse(obj19); //NOTE: Increment by 1
+var filter = "Base_Level";
+var keyword = z; //NOTE: Increment by 1 - fil1, fil2, etc.
+var fil19 = myObj19.filter(function(obj) {
+    return obj[filter] === keyword;
+});
+
+//Get the Multiplier
+//NOTE: Change element id - increment by 1 - out1, out2, etc - fil1, fil2, etc
+const out19 = fil19.map(({ Feature_Level, Multiplier }) => ({ Feature_Level, Multiplier }));
+out19.forEach(function(out19) {
+    var n19 = out19.Feature_Level; //NOTE: Change element id - increment by 1
+    var m19 = out19.Multiplier; //NOTE: Change element id - increment by 1
+          if (n19 == avg){
+            parseInt(m19); //NOTE: Change element id - increment by 1
+            document.getElementById("vwy3").innerHTML = m19; //NOTE: Change element id - increment by 1
+          }
+})
+
+//Math part row
+var row20 = $('.ritem18'), //NOTE: Change element id - increment by 1 - increment row by 1
+    row21 = $('.multi18'); //NOTE: Change element id - increment by 1 - increment row by 1
+    $.each(row20, function(value20) {
+  var val1 = parseInt(row20[value20].innerHTML); //NOTE: Change element id - increment by 1 and value id
+  var val2 = row21[value20].innerHTML; //NOTE: Change element id - increment by 1 and value id
+  var rtot19 = val1 * val2; //NOTE: Change element id - increment by 1
+  console.log(val1);
+  console.log(val2);
+  console.log(rtot19);
+document.getElementById("rtot18").innerHTML = rtot19; //NOTE: Change element id - increment by 1
+
+grandTotal();
+
+});
+
+});
+
+});
+
+// END Call Tracking
+
+// START Customer Service
+// NOTE: Change the select ID
+$('#custsvc').on('change', function() {
+        var selected = $(this).find('option:selected').text();
+    $('#platform').text();
+var obj = (this.value);
+$(document).ready(function() {
+  var myObj = JSON.parse(obj);
+  var x = myObj.platform;
+  var y = myObj.base_price;
+  var z = myObj.level;
+document.getElementById("vwyz0").innerHTML = x; //NOTE: Change element id to reflect the correct one
+document.getElementById("customersvcselect").innerHTML = '<strong>Customer Service:</strong> ' + x;
+document.getElementById("vwyz1").innerHTML = y; //NOTE: Change element id to reflect the correct one
+document.getElementById("vwyz2").innerHTML = z; //NOTE: Change element id to reflect the correct one
+var multi = '[{"Base_Level":"1","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"1","Feature_Level":"2","Multiplier":"1.3"},{"Base_Level":"1","Feature_Level":"3","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"2","Feature_Level":"2","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"3","Multiplier":"2.75"},{"Base_Level":"3","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"3","Feature_Level":"2","Multiplier":"2.5"},{"Base_Level":"3","Feature_Level":"3","Multiplier":"3.5"},{"Base_Level":"4","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"4","Feature_Level":"2","Multiplier":"3"},{"Base_Level":"4","Feature_Level":"3","Multiplier":"5"},{"Base_Level":"0","Feature_Level":"0","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"1","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"2","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"3","Multiplier":"0"}]';
+var zobj19 = multi; //NOTE: Increment by 1
+var zmyObj19 = JSON.parse(zobj19); //NOTE: Increment by 1
+var filter = "Base_Level";
+var keyword = z; //NOTE: Increment by 1 - fil1, fil2, etc.
+var zfil19 = zmyObj19.filter(function(obj) {
+    return obj[filter] === keyword;
+});
+
+//Get the Multiplier
+//NOTE: Change element id - increment by 1 - out1, out2, etc - fil1, fil2, etc
+const zout19 = zfil19.map(({ Feature_Level, Multiplier }) => ({ Feature_Level, Multiplier }));
+zout19.forEach(function(zout19) {
+    var zn19 = zout19.Feature_Level; //NOTE: Change element id - increment by 1
+    var zm19 = zout19.Multiplier; //NOTE: Change element id - increment by 1
+          if (zn19 == avg){
+            parseInt(zm19); //NOTE: Change element id - increment by 1
+            document.getElementById("vwyz3").innerHTML = zm19; //NOTE: Change element id - increment by 1
+          }
+})
+
+//Math part row
+var zrow20 = $('.zritem18'), //NOTE: Change element id - increment by 1 - increment row by 1
+    zrow21 = $('.zmulti18'); //NOTE: Change element id - increment by 1 - increment row by 1
+    $.each(zrow20, function(zvalue20) {
+  var val1 = parseInt(zrow20[zvalue20].innerHTML); //NOTE: Change element id - increment by 1 and value id
+  var val2 = zrow21[zvalue20].innerHTML; //NOTE: Change element id - increment by 1 and value id
+  var zrtot19 = val1 * val2; //NOTE: Change element id - increment by 1
+  console.log(val1);
+  console.log(val2);
+  console.log(zrtot19);
+document.getElementById("zrtot18").innerHTML = zrtot19; //NOTE: Change element id - increment by 1
+
+grandTotal();
+
+});
+
+});
+
+});
+
+// END Customer Service
+
+// START Customer Service2
+// NOTE: Change the select ID
+$('#custsvc2').on('change', function() {
+        var selected = $(this).find('option:selected').text();
+    $('#platform').text();
+var obj = (this.value);
+$(document).ready(function() {
+  var myObj = JSON.parse(obj);
+  var x = myObj.platform;
+  var y = myObj.base_price;
+  var z = myObj.level;
+document.getElementById("zvwyz0").innerHTML = x; //NOTE: Change element id to reflect the correct one
+document.getElementById("customersvcselect2").innerHTML = '<strong>Customer Service 2:</strong> ' + x;
+document.getElementById("zvwyz1").innerHTML = y; //NOTE: Change element id to reflect the correct one
+document.getElementById("zvwyz2").innerHTML = z; //NOTE: Change element id to reflect the correct one
+var multi = '[{"Base_Level":"1","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"1","Feature_Level":"2","Multiplier":"1.3"},{"Base_Level":"1","Feature_Level":"3","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"2","Feature_Level":"2","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"3","Multiplier":"2.75"},{"Base_Level":"3","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"3","Feature_Level":"2","Multiplier":"2.5"},{"Base_Level":"3","Feature_Level":"3","Multiplier":"3.5"},{"Base_Level":"4","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"4","Feature_Level":"2","Multiplier":"3"},{"Base_Level":"4","Feature_Level":"3","Multiplier":"5"},{"Base_Level":"0","Feature_Level":"0","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"1","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"2","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"3","Multiplier":"0"}]';
+var zzobj19 = multi; //NOTE: Increment by 1
+var zzmyObj19 = JSON.parse(zzobj19); //NOTE: Increment by 1
+var filter = "Base_Level";
+var keyword = z; //NOTE: Increment by 1 - fil1, fil2, etc.
+var zzfil19 = zzmyObj19.filter(function(obj) {
+    return obj[filter] === keyword;
+});
+
+//Get the Multiplier
+//NOTE: Change element id - increment by 1 - out1, out2, etc - fil1, fil2, etc
+const zzout19 = zzfil19.map(({ Feature_Level, Multiplier }) => ({ Feature_Level, Multiplier }));
+zzout19.forEach(function(zzout19) {
+    var zzn19 = zzout19.Feature_Level; //NOTE: Change element id - increment by 1
+    var zzm19 = zzout19.Multiplier; //NOTE: Change element id - increment by 1
+          if (zzn19 == avg){
+            parseInt(zzm19); //NOTE: Change element id - increment by 1
+            document.getElementById("zvwyz3").innerHTML = zzm19; //NOTE: Change element id - increment by 1
+          }
+})
+
+//Math part row
+var zzrow20 = $('.zzritem18'), //NOTE: Change element id - increment by 1 - increment row by 1
+    zzrow21 = $('.zzmulti18'); //NOTE: Change element id - increment by 1 - increment row by 1
+    $.each(zzrow20, function(zzvalue20) {
+  var val1 = parseInt(zzrow20[zzvalue20].innerHTML); //NOTE: Change element id - increment by 1 and value id
+  var val2 = zzrow21[zzvalue20].innerHTML; //NOTE: Change element id - increment by 1 and value id
+  var zzrtot19 = val1 * val2; //NOTE: Change element id - increment by 1
+  console.log(val1);
+  console.log(val2);
+  console.log(zzrtot19);
+document.getElementById("zzrtot18").innerHTML = zzrtot19; //NOTE: Change element id - increment by 1
+
+grandTotal();
+
+});
+
+});
+
+});
+
+// END Customer Service2
+
+// START Customer Service3
+// NOTE: Change the select ID
+$('#custsvc3').on('change', function() {
+        var selected = $(this).find('option:selected').text();
+    $('#platform').text();
+var obj = (this.value);
+$(document).ready(function() {
+  var myObj = JSON.parse(obj);
+  var x = myObj.platform;
+  var y = myObj.base_price;
+  var z = myObj.level;
+document.getElementById("dzvwyz0").innerHTML = x; //NOTE: Change element id to reflect the correct one
+document.getElementById("customersvcselect3").innerHTML = '<strong>Customer Service 3:</strong> ' + x;
+document.getElementById("dzvwyz1").innerHTML = y; //NOTE: Change element id to reflect the correct one
+document.getElementById("dzvwyz2").innerHTML = z; //NOTE: Change element id to reflect the correct one
+var multi = '[{"Base_Level":"1","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"1","Feature_Level":"2","Multiplier":"1.3"},{"Base_Level":"1","Feature_Level":"3","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"2","Feature_Level":"2","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"3","Multiplier":"2.75"},{"Base_Level":"3","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"3","Feature_Level":"2","Multiplier":"2.5"},{"Base_Level":"3","Feature_Level":"3","Multiplier":"3.5"},{"Base_Level":"4","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"4","Feature_Level":"2","Multiplier":"3"},{"Base_Level":"4","Feature_Level":"3","Multiplier":"5"},{"Base_Level":"0","Feature_Level":"0","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"1","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"2","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"3","Multiplier":"0"}]';
+var dzzobj19 = multi; //NOTE: Increment by 1
+var dzzmyObj19 = JSON.parse(dzzobj19); //NOTE: Increment by 1
+var filter = "Base_Level";
+var keyword = z; //NOTE: Increment by 1 - fil1, fil2, etc.
+var dzzfil19 = dzzmyObj19.filter(function(obj) {
+    return obj[filter] === keyword;
+});
+
+//Get the Multiplier
+//NOTE: Change element id - increment by 1 - out1, out2, etc - fil1, fil2, etc
+const dzzout19 = dzzfil19.map(({ Feature_Level, Multiplier }) => ({ Feature_Level, Multiplier }));
+dzzout19.forEach(function(dzzout19) {
+    var dzzn19 = dzzout19.Feature_Level; //NOTE: Change element id - increment by 1
+    var dzzm19 = dzzout19.Multiplier; //NOTE: Change element id - increment by 1
+          if (dzzn19 == avg){
+            parseInt(dzzm19); //NOTE: Change element id - increment by 1
+            document.getElementById("dzvwyz3").innerHTML = dzzm19; //NOTE: Change element id - increment by 1
+          }
+})
+
+//Math part row
+var dzzrow20 = $('.dzzritem18'), //NOTE: Change element id - increment by 1 - increment row by 1
+    dzzrow21 = $('.dzzmulti18'); //NOTE: Change element id - increment by 1 - increment row by 1
+    $.each(dzzrow20, function(dzzvalue20) {
+  var val1 = parseInt(dzzrow20[dzzvalue20].innerHTML); //NOTE: Change element id - increment by 1 and value id
+  var val2 = dzzrow21[dzzvalue20].innerHTML; //NOTE: Change element id - increment by 1 and value id
+  var dzzrtot19 = val1 * val2; //NOTE: Change element id - increment by 1
+  console.log(val1);
+  console.log(val2);
+  console.log(dzzrtot19);
+document.getElementById("dzzrtot18").innerHTML = dzzrtot19; //NOTE: Change element id - increment by 1
+
+grandTotal();
+
+});
+
+});
+
+});
+
+// END Customer Service3
+
+// START Project Management
+// NOTE: Change the select ID
+$('#projmgmt').on('change', function() {
+        var selected = $(this).find('option:selected').text();
+    $('#platform').text();
+var obj = (this.value);
+$(document).ready(function() {
+  var myObj = JSON.parse(obj);
+  var x = myObj.platform;
+  var y = myObj.base_price;
+  var z = myObj.level;
+document.getElementById("z0").innerHTML = x; //NOTE: Change element id to reflect the correct one
+document.getElementById("projectmanagementselect").innerHTML = '<strong>Project Management:</strong> ' + x;
+document.getElementById("z1").innerHTML = y; //NOTE: Change element id to reflect the correct one
+document.getElementById("z2").innerHTML = z; //NOTE: Change element id to reflect the correct one
+var multi = '[{"Base_Level":"1","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"1","Feature_Level":"2","Multiplier":"1.3"},{"Base_Level":"1","Feature_Level":"3","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"2","Feature_Level":"2","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"3","Multiplier":"2.75"},{"Base_Level":"3","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"3","Feature_Level":"2","Multiplier":"2.5"},{"Base_Level":"3","Feature_Level":"3","Multiplier":"3.5"},{"Base_Level":"4","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"4","Feature_Level":"2","Multiplier":"3"},{"Base_Level":"4","Feature_Level":"3","Multiplier":"5"},{"Base_Level":"0","Feature_Level":"0","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"1","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"2","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"3","Multiplier":"0"}]';
+var obj20 = multi; //NOTE: Increment by 1
+var Obj20 = JSON.parse(obj20); //NOTE: Increment by 1
+var filter = "Base_Level";
+var keyword = z; //NOTE: Increment by 1 - fil1, fil2, etc.
+var fil20 = Obj20.filter(function(obj) {
+    return obj[filter] === keyword;
+});
+
+//Get the Multiplier
+//NOTE: Change element id - increment by 1 - out1, out2, etc - fil1, fil2, etc
+const out20 = fil20.map(({ Feature_Level, Multiplier }) => ({ Feature_Level, Multiplier }));
+out20.forEach(function(out20) {
+    var n20 = out20.Feature_Level; //NOTE: Change element id - increment by 1
+    var m20 = out20.Multiplier; //NOTE: Change element id - increment by 1
+          if (n20 == avg){
+            parseInt(m20); //NOTE: Change element id - increment by 1
+            document.getElementById("z3").innerHTML = m20; //NOTE: Change element id - increment by 1
+          }
+})
+
+//Math part row
+var row21 = $('.item20'), //NOTE: Change element id - increment by 1 - increment row by 1
+    row22 = $('.multi20'); //NOTE: Change element id - increment by 1 - increment row by 1
+    $.each(row21, function(value20) {
+  var val1 = parseInt(row21[value20].innerHTML); //NOTE: Change element id - increment by 1 and value id
+  var val2 = row22[value20].innerHTML; //NOTE: Change element id - increment by 1 and value id
+  var tot20 = val1 * val2; //NOTE: Change element id - increment by 1
+  console.log(val1);
+  console.log(val2);
+  console.log(tot20);
+document.getElementById("tot20").innerHTML = tot20; //NOTE: Change element id - increment by 1
+
+grandTotal();
+
+});
+
+});
+
+});
+
+// END Project Management
+
+// START Project Management2
+// NOTE: Change the select ID
+$('#projmgmt2').on('change', function() {
+        var selected = $(this).find('option:selected').text();
+    $('#platform').text();
+var obj = (this.value);
+$(document).ready(function() {
+  var myObj = JSON.parse(obj);
+  var x = myObj.platform;
+  var y = myObj.base_price;
+  var z = myObj.level;
+document.getElementById("y0").innerHTML = x; //NOTE: Change element id to reflect the correct one
+document.getElementById("projectmanagementselect2").innerHTML = '<strong>Project Management 2:</strong> ' + x;
+document.getElementById("y1").innerHTML = y; //NOTE: Change element id to reflect the correct one
+document.getElementById("y2").innerHTML = z; //NOTE: Change element id to reflect the correct one
+var multi = '[{"Base_Level":"1","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"1","Feature_Level":"2","Multiplier":"1.3"},{"Base_Level":"1","Feature_Level":"3","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"2","Feature_Level":"2","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"3","Multiplier":"2.75"},{"Base_Level":"3","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"3","Feature_Level":"2","Multiplier":"2.5"},{"Base_Level":"3","Feature_Level":"3","Multiplier":"3.5"},{"Base_Level":"4","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"4","Feature_Level":"2","Multiplier":"3"},{"Base_Level":"4","Feature_Level":"3","Multiplier":"5"},{"Base_Level":"0","Feature_Level":"0","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"1","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"2","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"3","Multiplier":"0"}]';
+var obj20y = multi; //NOTE: Increment by 1
+var Obj20y = JSON.parse(obj20y); //NOTE: Increment by 1
+var filter = "Base_Level";
+var keyword = z; //NOTE: Increment by 1 - fil1, fil2, etc.
+var fil20y = Obj20y.filter(function(obj) {
+    return obj[filter] === keyword;
+});
+
+//Get the Multiplier
+//NOTE: Change element id - increment by 1 - out1, out2, etc - fil1, fil2, etc
+const out20y = fil20y.map(({ Feature_Level, Multiplier }) => ({ Feature_Level, Multiplier }));
+out20y.forEach(function(out20y) {
+    var n20y = out20y.Feature_Level; //NOTE: Change element id - increment by 1
+    var m20y = out20y.Multiplier; //NOTE: Change element id - increment by 1
+          if (n20y == avg){
+            parseInt(m20y); //NOTE: Change element id - increment by 1
+            document.getElementById("y3").innerHTML = m20y; //NOTE: Change element id - increment by 1
+          }
+})
+
+//Math part row
+var row21y = $('.item20y'), //NOTE: Change element id - increment by 1 - increment row by 1
+    row22y = $('.multi20y'); //NOTE: Change element id - increment by 1 - increment row by 1
+    $.each(row21y, function(value20y) {
+  var val1 = parseInt(row21y[value20y].innerHTML); //NOTE: Change element id - increment by 1 and value id
+  var val2 = row22y[value20y].innerHTML; //NOTE: Change element id - increment by 1 and value id
+  var tot20y = val1 * val2; //NOTE: Change element id - increment by 1
+  console.log(val1);
+  console.log(val2);
+  console.log(tot20y);
+document.getElementById("tot20y").innerHTML = tot20y; //NOTE: Change element id - increment by 1
+
+grandTotal();
+
+});
+
+});
+
+});
+
+// END Project Management2
+
+// START Project Management3
+// NOTE: Change the select ID
+$('#projmgmt3').on('change', function() {
+        var selected = $(this).find('option:selected').text();
+    $('#platform').text();
+var obj = (this.value);
+$(document).ready(function() {
+  var myObj = JSON.parse(obj);
+  var x = myObj.platform;
+  var y = myObj.base_price;
+  var z = myObj.level;
+document.getElementById("y0x").innerHTML = x; //NOTE: Change element id to reflect the correct one
+document.getElementById("projectmanagementselect3").innerHTML = '<strong>Project Management 3:</strong> ' + x;
+document.getElementById("y1x").innerHTML = y; //NOTE: Change element id to reflect the correct one
+document.getElementById("y2x").innerHTML = z; //NOTE: Change element id to reflect the correct one
+var multi = '[{"Base_Level":"1","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"1","Feature_Level":"2","Multiplier":"1.3"},{"Base_Level":"1","Feature_Level":"3","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"2","Feature_Level":"2","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"3","Multiplier":"2.75"},{"Base_Level":"3","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"3","Feature_Level":"2","Multiplier":"2.5"},{"Base_Level":"3","Feature_Level":"3","Multiplier":"3.5"},{"Base_Level":"4","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"4","Feature_Level":"2","Multiplier":"3"},{"Base_Level":"4","Feature_Level":"3","Multiplier":"5"},{"Base_Level":"0","Feature_Level":"0","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"1","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"2","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"3","Multiplier":"0"}]';
+var obj20yx = multi; //NOTE: Increment by 1
+var Obj20yx = JSON.parse(obj20yx); //NOTE: Increment by 1
+var filter = "Base_Level";
+var keyword = z; //NOTE: Increment by 1 - fil1, fil2, etc.
+var fil20yx = Obj20yx.filter(function(obj) {
+    return obj[filter] === keyword;
+});
+
+//Get the Multiplier
+//NOTE: Change element id - increment by 1 - out1, out2, etc - fil1, fil2, etc
+const out20yx = fil20yx.map(({ Feature_Level, Multiplier }) => ({ Feature_Level, Multiplier }));
+out20yx.forEach(function(out20yx) {
+    var n20yx = out20yx.Feature_Level; //NOTE: Change element id - increment by 1
+    var m20yx = out20yx.Multiplier; //NOTE: Change element id - increment by 1
+          if (n20yx == avg){
+            parseInt(m20yx); //NOTE: Change element id - increment by 1
+            document.getElementById("y3x").innerHTML = m20yx; //NOTE: Change element id - increment by 1
+          }
+})
+
+//Math part row
+var row21yx = $('.item20yx'), //NOTE: Change element id - increment by 1 - increment row by 1
+    row22yx = $('.multi20yx'); //NOTE: Change element id - increment by 1 - increment row by 1
+    $.each(row21yx, function(value20yx) {
+  var val1 = parseInt(row21yx[value20yx].innerHTML); //NOTE: Change element id - increment by 1 and value id
+  var val2 = row22yx[value20yx].innerHTML; //NOTE: Change element id - increment by 1 and value id
+  var tot20yx = val1 * val2; //NOTE: Change element id - increment by 1
+  console.log(val1);
+  console.log(val2);
+  console.log(tot20yx);
+document.getElementById("tot20yx").innerHTML = tot20yx; //NOTE: Change element id - increment by 1
+
+grandTotal();
+
+});
+
+});
+
+});
+
+// END Project Management3
+
+// START People Management (HR)
+// NOTE: Change the select ID
+$('#hrtime').on('change', function() {
+        var selected = $(this).find('option:selected').text();
+    $('#platform').text();
+var obj = (this.value);
+$(document).ready(function() {
+  var myObj = JSON.parse(obj);
+  var x = myObj.platform;
+  var y = myObj.base_price;
+  var z = myObj.level;
+document.getElementById("zy0x").innerHTML = x; //NOTE: Change element id to reflect the correct one
+document.getElementById("peoplemanagementselect").innerHTML = '<strong>People Management (HR):</strong> ' + x;
+document.getElementById("zy1x").innerHTML = y; //NOTE: Change element id to reflect the correct one
+document.getElementById("zy2x").innerHTML = z; //NOTE: Change element id to reflect the correct one
+var multi = '[{"Base_Level":"1","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"1","Feature_Level":"2","Multiplier":"1.3"},{"Base_Level":"1","Feature_Level":"3","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"2","Feature_Level":"2","Multiplier":"2"},{"Base_Level":"2","Feature_Level":"3","Multiplier":"2.75"},{"Base_Level":"3","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"3","Feature_Level":"2","Multiplier":"2.5"},{"Base_Level":"3","Feature_Level":"3","Multiplier":"3.5"},{"Base_Level":"4","Feature_Level":"1","Multiplier":"1"},{"Base_Level":"4","Feature_Level":"2","Multiplier":"3"},{"Base_Level":"4","Feature_Level":"3","Multiplier":"5"},{"Base_Level":"0","Feature_Level":"0","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"1","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"2","Multiplier":"0"},{"Base_Level":"0","Feature_Level":"3","Multiplier":"0"}]';
+var zobj20yx = multi; //NOTE: Increment by 1
+var zObj20yx = JSON.parse(zobj20yx); //NOTE: Increment by 1
+var filter = "Base_Level";
+var keyword = z; //NOTE: Increment by 1 - fil1, fil2, etc.
+var zfil20yx = zObj20yx.filter(function(obj) {
+    return obj[filter] === keyword;
+});
+
+//Get the Multiplier
+//NOTE: Change element id - increment by 1 - out1, out2, etc - fil1, fil2, etc
+const zout20yx = zfil20yx.map(({ Feature_Level, Multiplier }) => ({ Feature_Level, Multiplier }));
+zout20yx.forEach(function(zout20yx) {
+    var zn20yx = zout20yx.Feature_Level; //NOTE: Change element id - increment by 1
+    var zm20yx = zout20yx.Multiplier; //NOTE: Change element id - increment by 1
+          if (zn20yx == avg){
+            parseInt(zm20yx); //NOTE: Change element id - increment by 1
+            document.getElementById("zy3x").innerHTML = zm20yx; //NOTE: Change element id - increment by 1
+          }
+})
+
+//Math part row
+var zrow21yx = $('.zitem20yx'), //NOTE: Change element id - increment by 1 - increment row by 1
+    zrow22yx = $('.zmulti20yx'); //NOTE: Change element id - increment by 1 - increment row by 1
+    $.each(zrow21yx, function(zvalue20yx) {
+  var val1 = parseInt(zrow21yx[zvalue20yx].innerHTML); //NOTE: Change element id - increment by 1 and value id
+  var val2 = zrow22yx[zvalue20yx].innerHTML; //NOTE: Change element id - increment by 1 and value id
+  var ztot20yx = val1 * val2; //NOTE: Change element id - increment by 1
+  console.log(val1);
+  console.log(val2);
+  console.log(ztot20yx);
+document.getElementById("ztot20yx").innerHTML = ztot20yx; //NOTE: Change element id - increment by 1
+
+grandTotal();
+
+});
+
+});
+
+});
+
+// END People Management (HR)
+</script>
+<div hidden>
+<div class="row">
+<table>
+<tr>
+<td>
+Permissions
+</td>
+<td>
+View
+</td>
+<td>
+Compare
+</td>
+<td>
+Total
+</td>
+</tr>
+<tr>
+<td>
+<div id = "p0" class="item"></div>
+</td>
+<td>
+<div id = "v1" class="item"></div>
+</td>
+<td>
+<div id = "c2" class="item"></div>
+</td>
+<td>
+<div id = "tot" class = "tot"></div>
+</td>
+</tr>
+</table>
+</div>
+<div class="row">
+<table>
+<tr>
+<td>
+Selection
+</td>
+<td>
+Base Price
+</td>
+<td>
+Level
+</td>
+<td>
+Mulitplier
+</td>
+<td>
+Projected Cost
+</td>
+</tr>
+<tr>
+<td>
+<div id = "f0"></div>
+</td>
+<td>
+<div id = "f1" class = "ritem"></div>
+</td>
+<td>
+<div id = "f2"></div>
+</td>
+<td>
+<div id = "f3" class = "multi"></div>
+</td>
+<td>
+<div id = "rtot" class = "sub_t"></div>
+</td>
+</tr>
+<td>
+<div id = "g0"></div>
+</td>
+<td>
+<div id = "g1" class = "ritem1"></div>
+</td>
+<td>
+<div id = "g2"></div>
+</td>
+<td>
+<div id = "g3" class = "multi1"></div>
+</td>
+<td>
+<div id = "rtot1" class = "sub_t"></div>
+</td>
+</tr>
+<td>
+<div id = "h0"></div>
+</td>
+<td>
+<div id = "h1" class = "ritem2"></div>
+</td>
+<td>
+<div id = "h2"></div>
+</td>
+<td>
+<div id = "h3" class = "multi2"></div>
+</td>
+<td>
+<div id = "rtot2" class = "sub_t"></div>
+</td>
+</tr>
+<td>
+<div id = "i0"></div>
+</td>
+<td>
+<div id = "i1" class = "ritem3"></div>
+</td>
+<td>
+<div id = "i2"></div>
+</td>
+<td>
+<div id = "i3" class = "multi3"></div>
+</td>
+<td>
+<div id = "rtot3" class = "sub_t"></div>
+</td>
+</tr>
+<td>
+<div id = "j0"></div>
+</td>
+<td>
+<div id = "j1" class = "ritem4"></div>
+</td>
+<td>
+<div id = "j2"></div>
+</td>
+<td>
+<div id = "j3" class = "multi4"></div>
+</td>
+<td>
+<div id = "rtot4" class = "sub_t"></div>
+</td>
+</tr>
+<td>
+<div id = "pp0"></div>
+</td>
+<td>
+<div id = "pp1" class = "ritem9"></div>
+</td>
+<td>
+<div id = "pp2"></div>
+</td>
+<td>
+<div id = "pp3" class = "multi9"></div>
+</td>
+<td>
+<div id = "rtot9" class = "sub_t"></div>
+</td>
+</tr>
+<td>
+<div id = "t0"></div>
+</td>
+<td>
+<div id = "t1" class = "ritem14"></div>
+</td>
+<td>
+<div id = "t2"></div>
+</td>
+<td>
+<div id = "t3" class = "multi14"></div>
+</td>
+<td>
+<div id = "rtot14" class = "sub_t"></div>
+</td>
+</tr>
+<td>
+<div id = "u0"></div>
+</td>
+<td>
+<div id = "u1" class = "ritem15"></div>
+</td>
+<td>
+<div id = "u2"></div>
+</td>
+<td>
+<div id = "u3" class = "multi15"></div>
+</td>
+<td>
+<div id = "rtot15" class = "sub_t"></div>
+</td>
+</tr>
+<td>
+<div id = "vv0"></div>
+</td>
+<td>
+<div id = "vv1" class = "ritem16"></div>
+</td>
+<td>
+<div id = "vv2"></div>
+</td>
+<td>
+<div id = "vv3" class = "multi16"></div>
+</td>
+<td>
+<div id = "rtot16" class = "sub_t"></div>
+</td>
+</tr>
+<td>
+<div id = "vw0"></div>
+</td>
+<td>
+<div id = "vw1" class = "ritem17"></div>
+</td>
+<td>
+<div id = "vw2"></div>
+</td>
+<td>
+<div id = "vw3" class = "multi17"></div>
+</td>
+<td>
+<div id = "rtot17" class = "sub_t"></div>
+</td>
+</tr>
+<td>
+<div id = "o0"></div>
+</td>
+<td>
+<div id = "o1" class = "ritem10"></div>
+</td>
+<td>
+<div id = "o2"></div>
+</td>
+<td>
+<div id = "o3" class = "multi10"></div>
+</td>
+<td>
+<div id = "rtot10" class = "sub_t"></div>
+</td>
+</tr>
+<td>
+<div id = "q0"></div>
+</td>
+<td>
+<div id = "q1" class = "ritem11"></div>
+</td>
+<td>
+<div id = "q2"></div>
+</td>
+<td>
+<div id = "q3" class = "multi11"></div>
+</td>
+<td>
+<div id = "rtot11" class = "sub_t"></div>
+</td>
+</tr>
+<td>
+<div id = "r0"></div>
+</td>
+<td>
+<div id = "r1" class = "ritem12"></div>
+</td>
+<td>
+<div id = "r2"></div>
+</td>
+<td>
+<div id = "r3" class = "multi12"></div>
+</td>
+<td>
+<div id = "rtot12" class = "sub_t"></div>
+</td>
+</tr>
+<td>
+<div id = "s0"></div>
+</td>
+<td>
+<div id = "s1" class = "ritem13"></div>
+</td>
+<td>
+<div id = "s2"></div>
+</td>
+<td>
+<div id = "s3" class = "multi13"></div>
+</td>
+<td>
+<div id = "rtot13" class = "sub_t"></div>
+</td>
+</tr>
+<td>
+<div id = "k0"></div>
+</td>
+<td>
+<div id = "k1" class = "ritem5"></div>
+</td>
+<td>
+<div id = "k2"></div>
+</td>
+<td>
+<div id = "k3" class = "multi5"></div>
+</td>
+<td>
+<div id = "rtot5" class = "sub_t"></div>
+</td>
+</tr>
+<td>
+<div id = "l0"></div>
+</td>
+<td>
+<div id = "l1" class = "ritem6"></div>
+</td>
+<td>
+<div id = "l2"></div>
+</td>
+<td>
+<div id = "l3" class = "multi6"></div>
+</td>
+<td>
+<div id = "rtot6" class = "sub_t"></div>
+</td>
+</tr>
+<td>
+<div id = "m0"></div>
+</td>
+<td>
+<div id = "m1" class = "ritem7"></div>
+</td>
+<td>
+<div id = "m2"></div>
+</td>
+<td>
+<div id = "m3" class = "multi7"></div>
+</td>
+<td>
+<div id = "rtot7" class = "sub_t"></div>
+</td>
+</tr>
+<td>
+<div id = "n0"></div>
+</td>
+<td>
+<div id = "n1" class = "ritem8"></div>
+</td>
+<td>
+<div id = "n2"></div>
+</td>
+<td>
+<div id = "n3" class = "multi8"></div>
+</td>
+<td>
+<div id = "rtot8" class = "sub_t"></div>
+</td>
+</tr>
+<td>
+<div id = "vwyz0"></div>
+</td>
+<td>
+<div id = "vwyz1" class = "zritem18"></div>
+</td>
+<td>
+<div id = "vwyz2"></div>
+</td>
+<td>
+<div id = "vwyz3" class = "zmulti18"></div>
+</td>
+<td>
+<div id = "zrtot18" class = "sub_t"></div>
+</td>
+</tr>
+<td>
+<div id = "zvwyz0"></div>
+</td>
+<td>
+<div id = "zvwyz1" class = "zzritem18"></div>
+</td>
+<td>
+<div id = "zvwyz2"></div>
+</td>
+<td>
+<div id = "zvwyz3" class = "zzmulti18"></div>
+</td>
+<td>
+<div id = "zzrtot18" class = "sub_t"></div>
+</td>
+</tr>
+<td>
+<div id = "dzvwyz0"></div>
+</td>
+<td>
+<div id = "dzvwyz1" class = "dzzritem18"></div>
+</td>
+<td>
+<div id = "dzvwyz2"></div>
+</td>
+<td>
+<div id = "dzvwyz3" class = "dzzmulti18"></div>
+</td>
+<td>
+<div id = "dzzrtot18" class = "sub_t"></div>
+</td>
+</tr>
+<td>
+<div id = "vwy0"></div>
+</td>
+<td>
+<div id = "vwy1" class = "ritem18"></div>
+</td>
+<td>
+<div id = "vwy2"></div>
+</td>
+<td>
+<div id = "vwy3" class = "multi18"></div>
+</td>
+<td>
+<div id = "rtot18" class = "sub_t"></div>
+</td>
+</tr>
+<td>
+<div id = "z0"></div>
+</td>
+<td>
+<div id = "z1" class = "item20"></div>
+</td>
+<td>
+<div id = "z2"></div>
+</td>
+<td>
+<div id = "z3" class = "multi20"></div>
+</td>
+<td>
+<div id = "tot20" class = "sub_t"></div>
+</td>
+</tr>
+<td>
+<div id = "y0"></div>
+</td>
+<td>
+<div id = "y1" class = "item20y"></div>
+</td>
+<td>
+<div id = "y2"></div>
+</td>
+<td>
+<div id = "y3" class = "multi20y"></div>
+</td>
+<td>
+<div id = "tot20y" class = "sub_t"></div>
+</td>
+</tr>
+<td>
+<div id = "y0x"></div>
+</td>
+<td>
+<div id = "y1x" class = "item20yx"></div>
+</td>
+<td>
+<div id = "y2x"></div>
+</td>
+<td>
+<div id = "y3x" class = "multi20yx"></div>
+</td>
+<td>
+<div id = "tot20yx" class = "sub_t"></div>
+</td>
+</tr>
+<td>
+<div id = "zy0x"></div>
+</td>
+<td>
+<div id = "zy1x" class = "zitem20yx"></div>
+</td>
+<td>
+<div id = "zy2x"></div>
+</td>
+<td>
+<div id = "zy3x" class = "zmulti20yx"></div>
+</td>
+<td>
+<div id = "ztot20yx" class = "sub_t"></div>
+</td>
+</tr>
+</table>
+</div> <!-- CLOSE ROW -->
+</div> <!-- CLOSE DISPLAY:NONE -->  
